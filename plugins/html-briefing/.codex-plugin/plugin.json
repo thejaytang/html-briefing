@@ -1,7 +1,7 @@
 {
-  "name": "html-brifing",
-  "version": "0.6.0",
-  "description": "Storytelling-led HTML briefings with Impeccable, UI UX Pro Max, ImageGen, GSAP and browser verification; optional host Visualize previews.",
+  "name": "html-briefing",
+  "version": "0.7.0",
+  "description": "Evidence-led HTML briefings with a default flow canvas, presenter-controlled zoom, progressive disclosure and long-form reading; optional visual helpers and browser verification.",
   "author": {
     "name": "Jay Tang",
     "url": "https://github.com/thejaytang"
@@ -9,21 +9,21 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "HTML Briefing",
-    "shortDescription": "Storytelling and visual tools for HTML briefings",
+    "shortDescription": "Flow-canvas HTML briefings and evidence-led storytelling",
     "longDescription": "One storytelling lead combines Impeccable, UI UX Pro Max, ImageGen and the eight GSAP modules as needed. Use host Visualize for conversation previews and browser tools or Playwright for final offline verification. Ordinary writing and coding use the agent’s abilities. No mandatory full-suite execution.",
     "developerName": "Jay Tang",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Use $html-brifing to create an offline project briefing.",
-      "Use $html-brifing to review this existing HTML presentation."
+      "Use $html-briefing to create an offline flow-canvas project briefing.",
+      "Use $html-briefing to review this existing HTML presentation."
     ],
     "brandColor": "#126B61",
-    "websiteURL": "https://github.com/thejaytang/html-brifing"
+    "websiteURL": "https://github.com/thejaytang/html-briefing"
   },
   "license": "MIT AND Apache-2.0",
-  "repository": "https://github.com/thejaytang/html-brifing",
-  "homepage": "https://github.com/thejaytang/html-brifing",
+  "repository": "https://github.com/thejaytang/html-briefing",
+  "homepage": "https://github.com/thejaytang/html-briefing",
   "keywords": [
     "html",
     "presentation",

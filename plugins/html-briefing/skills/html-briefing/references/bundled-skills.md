@@ -4,7 +4,7 @@ One storytelling lead and 11 helper entries. Select by task, not by a requiremen
 
 | Entry | Role |
 |---|---|
-| [html-brifing](../../html-brifing/SKILL.md) | Storytelling, evidence, diagrams/charts and delivery coordination |
+| [html-briefing](../../html-briefing/SKILL.md) | Storytelling, evidence, diagrams/charts and delivery coordination |
 | [impeccable](../../impeccable/SKILL.md) | Visual direction and review |
 | [ui-ux-pro-max](../../ui-ux-pro-max/SKILL.md) | Searchable design/chart/interaction references |
 | [playwright](../../playwright/SKILL.md) | Final browser verification |

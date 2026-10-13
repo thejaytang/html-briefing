@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "html-briefing",
+  "version": "0.7.0",
+  "description": "Evidence-led HTML briefings with a default flow canvas, presenter-controlled zoom, progressive disclosure and long-form reading; optional visual helpers and browser verification.",
+  "author": {
+    "name": "Jay Tang",
+    "url": "https://github.com/thejaytang"
+  },
+  "license": "MIT AND Apache-2.0",
+  "repository": "https://github.com/thejaytang/html-briefing",
+  "homepage": "https://github.com/thejaytang/html-briefing",
+  "keywords": [
+    "html",
+    "presentation",
+    "storytelling",
+    "skills",
+    "offline",
+    "imagegen"
+  ]
+}

@@ -31,10 +31,10 @@ def check(root):
 
     try:
         market = json.loads((root / '.agents/plugins/marketplace.json').read_text())
-        assert market['name'] == 'html-brifing'
+        assert market['name'] == 'html-briefing'
         entry, = market['plugins']
-        assert entry['name'] == 'html-brifing'
-        assert entry['source'] == {'source': 'local', 'path': './plugins/html-brifing'}
+        assert entry['name'] == 'html-briefing'
+        assert entry['source'] == {'source': 'local', 'path': './plugins/html-briefing'}
         plugin = local(root, entry['source']['path'])
         assert plugin is not None
         manifest = json.loads((plugin / '.codex-plugin/plugin.json').read_text())
@@ -42,7 +42,7 @@ def check(root):
         for field in ('name', 'version', 'description', 'license', 'repository'):
             assert portable[field] == manifest[field], f'Portable/compatibility mismatch: {field}'
         assert portable['$schema'] == 'https://agent-plugins.org/schemas/1.0.0/plugin.schema.json'
-        assert manifest['name'] == 'html-brifing' and manifest['license'] == 'MIT AND Apache-2.0'
+        assert manifest['name'] == 'html-briefing' and manifest['license'] == 'MIT AND Apache-2.0'
         assert re.fullmatch(r'\d+\.\d+\.\d+(?:\+[0-9A-Za-z.-]+)?', manifest['version'])
         assert manifest['skills'].startswith('./') and '..' not in Path(manifest['skills']).parts
         skills = local(plugin, manifest['skills'])
@@ -51,8 +51,8 @@ def check(root):
         assert bundle['version'] == manifest['version'], 'Bundle version mismatch'
         imported = {item['skill']: item for item in bundle['bundled']}
         expected = set(bundle['coordinationSkills']) | set(imported)
-        assert bundle['coordinationSkills'] == ['html-brifing'], 'Use one briefing coordination entrypoint'
-        assert expected == {'playwright', 'gsap-core', 'gsap-performance', 'gsap-plugins', 'ui-ux-pro-max', 'gsap-scrolltrigger', 'html-brifing', 'gsap-timeline', 'gsap-utils', 'impeccable', 'gsap-frameworks', 'gsap-react'} and len(imported) == 11, 'Incomplete declared bundle'
+        assert bundle['coordinationSkills'] == ['html-briefing'], 'Use one briefing coordination entrypoint'
+        assert expected == {'playwright', 'gsap-core', 'gsap-performance', 'gsap-plugins', 'ui-ux-pro-max', 'gsap-scrolltrigger', 'html-briefing', 'gsap-timeline', 'gsap-utils', 'impeccable', 'gsap-frameworks', 'gsap-react'} and len(imported) == 11, 'Incomplete declared bundle'
         actual = {p.parent.name for p in skills.glob('*/SKILL.md')}
         assert actual == expected, f'Skill inventory: expected {sorted(expected)}, got {sorted(actual)}'
         for name in expected:
@@ -60,6 +60,8 @@ def check(root):
             match = re.search(r'^name:\s*["\']?([a-z0-9-]+)["\']?\s*$', entry.read_text().split('---', 2)[1], re.M)
             assert match and match.group(1) == name, f'Wrong skill name: {name}'
             assert (skills / name / 'agents/openai.yaml').is_file(), f'Missing UI metadata: {name}'
+        for resource in ('references/flow-canvas.md', 'assets/flow-canvas/presentation.template.html', 'assets/flow-canvas/canvas-model.js', 'scripts/build_flow_canvas.py'):
+            assert local(skills / 'html-briefing', resource), f'Missing canvas resource: {resource}'
         for name, record in imported.items():
             base = skills / name
             assert record['license'] in {'MIT', 'Apache-2.0'}, f'Unreviewed license: {name}'

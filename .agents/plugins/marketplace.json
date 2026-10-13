@@ -1,14 +1,14 @@
 {
-  "name": "html-brifing",
+  "name": "html-briefing",
   "interface": {
     "displayName": "HTML Briefing"
   },
   "plugins": [
     {
-      "name": "html-brifing",
+      "name": "html-briefing",
       "source": {
         "source": "local",
-        "path": "./plugins/html-brifing"
+        "path": "./plugins/html-briefing"
       },
       "policy": {
         "installation": "AVAILABLE",

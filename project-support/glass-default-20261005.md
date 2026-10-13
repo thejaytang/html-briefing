@@ -1,0 +1,5 @@
+# Glass transition default
+
+User-authorized local update on 5 October 2026. New presenter-led reports use translucent upward sheet overlap with restrained blur, opacity and outgoing scale. Existing artifacts change only when requested. Reading-first gesture boundaries, reverse navigation, reduced motion, keyboard focus and offline browser validation remain required.
+
+Only lead instructions and their reference are synchronized to the installed 0.5.0 customization. The maintained candidate remains 0.6.0; no tag, archive, public release or registration version is changed. Imported helper files and bundle integrity remain untouched. Validation: package structure/resources checker passed; 16/16 existing package and bundled-runtime tests passed. Installed lead/reference files were byte-compared with the maintained source. A locally generated briefing exercised the visible intermediate overlap, fresh wheel gesture boundaries and reverse navigation in macOS Chromium. Physical trackpad/touch feel and Windows were not established. No private briefing materials are included in this plugin repository.

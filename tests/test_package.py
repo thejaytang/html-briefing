@@ -22,33 +22,37 @@ class PackageChecks(unittest.TestCase):
     def test_valid_package(self):
         self.assertEqual(checker.check(self.root), [])
 
+    def test_missing_canvas_model(self):
+        (self.root / 'plugins/html-briefing/skills/html-briefing/assets/flow-canvas/canvas-model.js').unlink()
+        self.assertTrue(checker.check(self.root))
+
     def test_reintroduced_unrelated_skill(self):
-        skills = self.root / 'plugins/html-brifing/skills'
-        shutil.copytree(skills / 'html-brifing', skills / 'humanizer')
+        skills = self.root / 'plugins/html-briefing/skills'
+        shutil.copytree(skills / 'html-briefing', skills / 'humanizer')
         self.assertTrue(checker.check(self.root))
 
     def test_missing_skill(self):
-        (self.root / 'plugins/html-brifing/skills/html-brifing/SKILL.md').unlink()
+        (self.root / 'plugins/html-briefing/skills/html-briefing/SKILL.md').unlink()
         self.assertTrue(checker.check(self.root))
 
     def test_missing_bundled_entry(self):
-        (self.root / 'plugins/html-brifing/skills/playwright/SKILL.md').unlink()
+        (self.root / 'plugins/html-briefing/skills/playwright/SKILL.md').unlink()
         self.assertTrue(checker.check(self.root))
 
-    def test_missing_image_reference(self):
-        (self.root / 'plugins/html-brifing/skills/ui-ux-pro-max/references/workflow.md').unlink()
+    def test_missing_design_reference(self):
+        (self.root / 'plugins/html-briefing/skills/ui-ux-pro-max/references/workflow.md').unlink()
         self.assertTrue(checker.check(self.root))
 
     def test_missing_upstream_notice(self):
-        (self.root / 'plugins/html-brifing/skills/playwright/LICENSE.txt').unlink()
+        (self.root / 'plugins/html-briefing/skills/playwright/LICENSE.txt').unlink()
         self.assertTrue(checker.check(self.root))
 
     def test_missing_gsap_module(self):
-        (self.root / 'plugins/html-brifing/skills/gsap-timeline/SKILL.md').unlink()
+        (self.root / 'plugins/html-briefing/skills/gsap-timeline/SKILL.md').unlink()
         self.assertTrue(checker.check(self.root))
 
     def test_modified_bundled_script(self):
-        target = self.root / 'plugins/html-brifing/skills/ui-ux-pro-max/scripts/core.py'
+        target = self.root / 'plugins/html-briefing/skills/ui-ux-pro-max/scripts/core.py'
         target.write_text('print("changed")')
         self.assertTrue(checker.check(self.root))
 
@@ -58,14 +62,14 @@ class PackageChecks(unittest.TestCase):
         self.assertEqual(checker.check(self.root), [])
 
     def test_divergent_portable_manifest(self):
-        target = self.root / 'plugins/html-brifing/plugin.json'
+        target = self.root / 'plugins/html-briefing/plugin.json'
         data = json.loads(target.read_text())
         data['version'] = '0.0.1'
         target.write_text(json.dumps(data))
         self.assertTrue(checker.check(self.root))
 
     def test_manifest_escape(self):
-        file = self.root / 'plugins/html-brifing/.codex-plugin/plugin.json'
+        file = self.root / 'plugins/html-briefing/.codex-plugin/plugin.json'
         data = json.loads(file.read_text())
         data['skills'] = '../../outside'
         file.write_text(json.dumps(data))

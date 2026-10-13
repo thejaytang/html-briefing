@@ -1,4 +1,0 @@
-interface:
-  display_name: "HTML Briefing"
-  short_description: "Compose skills into evidence-led HTML presentations"
-  default_prompt: "Use $html-brifing to turn my project materials into an evidence-led, interactive, offline HTML briefing."

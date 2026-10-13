@@ -1,7 +1,34 @@
 # Current state
 
-- Preparing **0.6.0**, 2026-10-05: synchronize the latest local briefing guidance, add restrained editorial-glass page transitions, and correct the displayed name to **HTML Briefing**. The existing `html-brifing` technical slug remains for installed-user compatibility.
-- 12 skill entries: HTML Briefing, Impeccable, UI UX Pro Max, Playwright and eight GSAP modules. Codex system `$imagegen` is used directly; the duplicate personal copy is no longer packaged.
-- Added chapter/workspace controls and ChatGPT Sites delivery guidance.
-- Existing releases remain immutable. [Previous 0.5.0](https://github.com/thejaytang/html-brifing/releases/tag/v0.5.0).
-- Local structural and runtime tests still need to be run before merge.
+## 0.7.0 release preparation · 2026-10-13
+
+- User authorized renaming the public repository to `html-briefing` and publishing `v0.7.0`. Release is being prepared from current remote main plus the local flow-canvas changes. Remote rename/download verification is not yet recorded here.
+- Preserve remote commit `2446db1`: ImageGen uses the Codex system skill; the release has 12 entries (one lead and 11 helpers). The earlier local candidate incorrectly retained a duplicate ImageGen snapshot; it has been retired before publication.
+- Default flow canvas, reusable builder/template, reading bookmarks and anchored zoom remain unchanged. Active English/Chinese installation and download links target `v0.7.0` under the corrected repository name.
+- Post-publication evidence will be recorded separately, without changing the release tag or archive. Physical trackpad, file:// execution, cross-platform behavior and fresh-chat dispatch remain outside current verification.
+
+## Historical local candidate · 0.7.0 · 2026-10-13
+
+
+## 0.7.0 local candidate · 2026-10-13
+
+- Canonical source folder, marketplace, plugin, lead skill, UI labels and active local references are now `html-briefing`. Earlier uncommitted 0.6.0 changes are preserved. Existing GitHub URL and published tags are unchanged.
+- New presentations default to flow canvas: theme-based nodes, 1/4/9 anchored zoom, in-content branching, auto-hiding key navigation and long reading. Overview returns to page top; refocus restores the bookmark. Existing approved modes remain intact; editorial glass is optional.
+- Packaged the fictional demo as editable template/model, safe standalone builder, example and regression checks. Twelve upstream helper snapshots are unchanged; there remain 13 skill entrypoints.
+- Local installation migration completed: `html-briefing@html-briefing` 0.7.0 is installed/enabled; 202 plugin files byte-match source. Old registrations and the conflicting personal compatibility entry were retired after backup.
+- Package checker, 21 Python tests, canvas model assertions and official skill validation passed. Packaged browser checks confirmed branching, side-page anchoring, full-stage focus and reading restoration. [Evidence and limits](project-support/flow-canvas-0.7.0.md).
+- Next: use a new chat for fresh skill discovery, validate physical trackpad/offline/cross-browser behavior, and obtain separate authorization for any public repository rename or release.
+
+## Historical state · 0.6.0 candidate · 2026-10-05
+
+The following describes the previous version; its glass default is superseded above.
+
+- Presenter-led report creation now defaults to editorial-glass sheet transitions, with explicit alternatives, reduced motion and existing-design preservation. The lead and glass reference are synchronized to the installed local customization. Package validation is recorded in [glass update](project-support/glass-default-20261005.md). No release was published.
+- Maintained source is the **0.6.0 candidate**, not yet published. It adds pane resizing/collapse, confirmation of up to three languages, top-right language/fullscreen controls, title-driven report navigation and matching Sites delivery in ChatGPT. Prior local editorial-glass rules remain included. [Scoped update and validation](project-support/workspace-controls-20261002.md).
+- Ten lead-skill files are synchronized into the user's installed plugin and byte-verified, with original files backed up. This is a local customization of the installed **0.5.0** plugin; its registration, version identity and other skills are preserved. New-chat discovery and automatic dispatch have not been newly tested.
+- Local package checks, the 16 existing tests and official skill metadata validation pass. Bilingual docs/buttons, cover and workflow have been inspected in rendered form, including a 390px view. Candidate packaging and isolated validation pass, 22/22 necessary local-preparation checks.
+- Public stable remains **v0.5.0**, published 2026-09-29. Existing release/tag/archive are immutable. [Public release](https://github.com/thejaytang/html-brifing/releases/tag/v0.5.0). Publication of 0.6.0 is pending authorization.
+- The package retains 13 entries: the lead, four helpers and eight GSAP modules. Storytelling belongs to the lead; helpers are chosen by need. Visualize and Sites are host capabilities and are not redistributed. [Inventory](plugins/html-briefing/skills/html-briefing/references/bundled-skills.md).
+- Historical 0.5.0 archive and source verification is recorded in [release identity](project-support/release-verification-0.5.0.json) and [acceptance](project-support/evaluation-0.5.0.md). Native detail-page verification was incomplete; automatic host dispatch, live ImageGen and native Windows/Linux remain outside current evidence.
+
+Next: obtain publication authorization and verify any resulting public release from its downloaded archive. Private project materials, source credentials and conversation logs are excluded.

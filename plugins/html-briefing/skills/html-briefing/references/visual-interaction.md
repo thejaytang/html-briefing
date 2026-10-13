@@ -1,8 +1,3 @@
-For presenter-led reports, read [editorial-glass.md](editorial-glass.md) before implementing vertical page transitions. Keep native reading scroll and page changes distinct; verify the visible overlap, fresh edge gesture, damping and reduced-motion state.
-
-For presenter-led reports, read [editorial-glass.md](editorial-glass.md) before implementing vertical page transitions. Keep native reading scroll and page changes distinct; verify visible overlap, damping, fresh edge gestures and reduced-motion behavior.
-
-
 # Visual explanation and interaction
 
 ## Choose the relationship before the medium
@@ -29,6 +24,10 @@ Derive style from the audience, content and brand. Define shared typography, spa
 
 One main theme and visual guide attention. Keep navigation coherent; a chapter sidebar is one option for a long live briefing, not a universal rule. Avoid duplicate progress systems. Small inline SVG icons have their own size constraints.
 
+## Canvas state boundaries
+
+For the default flow canvas, follow [flow-canvas.md](flow-canvas.md). A zoom or pan never changes the expanded node graph or local disclosures. Explicit branch collapse hides owned descendants and restores focus to a surviving ancestor; saved reading/disclosure state may remain for reopening. These are distinct from mutually exclusive choices within a local explanation group.
+
 ## Object-bound disclosure
 
 Treat the object, trigger, explanation and selected state as a unit. Native details/summary works for local disclosure; a shared explanation area needs explicit current-object identity.
@@ -44,6 +43,8 @@ Treat the object, trigger, explanation and selected state as a unit. Native deta
 | Return to a branch | Follow an explicit position/state restoration policy |
 
 Independent groups may stay open. A timer must not replace the case or close an explanation someone is reading. Scroll to details only when necessary. Use real buttons, accessible names, aria-expanded/aria-controls, hidden state and correct focus behavior. Restore focus to the trigger if collapsing content contains focus. Pointer scrolling does not grab keyboard focus. Skip links appear on focus.
+
+For linked left-to-right panes, use [workspace controls](workspace-controls.md): draggable boundaries, supporting-pane collapse/restore, narrow-layout adaptation, and state-preserving language/fullscreen controls in the top right. Content-tree disclosure and pane visibility are separate states.
 
 ## Motion and continuity
 

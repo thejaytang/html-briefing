@@ -1,5 +1,3 @@
-For page-by-page editorial glass transitions, test slow and fast wheel/trackpad gestures, reverse direction, long-page reading overflow, and a fresh outward gesture at the page edge. Confirm one adjacent page per gesture, visible sheet overlap, clean settling and a reduced-motion state. Static checks cannot prove native damping or frame rate.
-
 # 1. 定义这次要验收什么
 
 验收范围跟随改动。文字调整核对事实、双语对应与版面；修改共享折叠逻辑则覆盖各类调用及嵌套状态；重做动效或打包则验证相应交互和交付边界。先列必要检查及成功标准，再执行。复用项目工具与隔离环境，不为检查演示新建庞大框架。
@@ -21,10 +19,13 @@ For page-by-page editorial glass transitions, test slow and fast wheel/trackpad 
 对新增或受影响的状态执行：
 
 1. 从首页进分支、直接进章节、返回总览，检查对象过渡和位置恢复。
+   - 职场交流与叙事汇报：顶部导航按真实标题大纲排序，与正文、场景归属、前后翻页共用章节来源；逐项检查跳转、高亮、直达链接、刷新返回、长标签与窄屏。学习图谱不因此增加汇报导航。
 2. 慢速、快速滚动及反向滚动，检查标题与正文没有过早模糊、消失或重叠。
 3. 点击图形、重复点击、换对象、展开下层再折叠上层，检查解释、选中和焦点一致。
 4. 调整参数或切换方法，确认主图中的操作和输出随状态更新；快速操作不会留下过期动画。
-5. 若有双语，验证图注、控件、隐藏说明和可访问名称，切换语言保留有效位置与选择。
+5. 若有多语言，先确认最多三种语言及默认语言；验证所有图注、控件、隐藏说明和可访问名称，中文保留英文专业术语。右上角切换保留有效位置、选择、查询和栏布局。
+   - 多栏布局：拖动边界、键盘调宽、上下限、收纳与恢复、窄窗口和全屏后重排均能正常操作，隐藏栏不残留焦点。
+   - 全屏：右上角进入与退出，浏览器 Escape 退出后按钮同步；受限宿主中显示真实状态及可理解的失败反馈。
 6. 若有动效，验证循环、离屏、隐藏标签页、全局暂停与 `prefers-reduced-motion`，静止状态仍可理解。
 7. 检查连线端点、选中阴影、键盘焦点、小图标与箭头的尺寸和对齐。
 
@@ -59,6 +60,8 @@ For page-by-page editorial glass transitions, test slow and fast wheel/trackpad 
 - 最少操作说明，如打开方式、目录选择、前后切换与点击展开。
 - 本次实际检查范围和会影响使用的缺口。
 
+ChatGPT 中的创建或修改任务按 [Sites 同步约定](chatgpt-sites.md)同步交付站点；沿用同一来源与站点标识，保留访问范围。HTML 验收与成功发布回执分别记录；不可用或未发布不得计为同步成功。
+
 需要打印或静态导出时，明确选择哪些状态与细节进入导出，并检查输出。不要假定当前屏幕截图包含所有折叠说明或能保留动画。
 
 # 5. 修复而非堆叠补丁
@@ -66,3 +69,7 @@ For page-by-page editorial glass transitions, test slow and fast wheel/trackpad 
 收到反馈先复现：记录场景、状态、视口和操作。区分内容组织、共享状态、布局与动效原因，再修改负责该行为的源逻辑。检查同类调用，避免在每个场景添加一份特殊覆盖。
 
 保留用户已经认可的叙事与事实。重大改版先完成最能验证新方案的代表场景与相邻转场，确认方向成立后再扩展；不得把完成一个样板说成全篇完成。
+
+## 流程画布验收
+
+新演示默认采用[流程画布](flow-canvas.md)。按该文档的行为验收表检查最终文件：缩放不折叠；侧页居中后缩放不回主线；单页铺满；长页到边界松手后再切换；概览回顶但聚焦恢复阅读；内容内展开收纳可追溯；导航和全屏保留状态。模型测试、浏览器验证、实体触控板和离线运行分别记录，不能相互替代。

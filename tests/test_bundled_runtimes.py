@@ -7,7 +7,7 @@ import sys
 import tempfile
 import unittest
 
-SKILLS = Path(__file__).resolve().parents[1] / 'plugins/html-brifing/skills'
+SKILLS = Path(__file__).resolve().parents[1] / 'plugins/html-briefing/skills'
 
 
 class BundledRuntimes(unittest.TestCase):

@@ -21,7 +21,7 @@ For each important scene, identify the audience question, supported takeaway, so
 
 Review the title outline alone: does it reveal a coherent argument? Then review the default views: can an asynchronous reader understand the core point without opening every detail? Keep test method, observation and supported conclusion together. Cut repeated setup and decorative metrics, not essential qualifications or contributor boundaries.
 
-For professional communication and narrative reports, the outline also defines top chapter navigation. Keep short localized labels, full headings and scene membership in one chapter model. Follow [workspace controls](workspace-controls.md) for state and acceptance; do not impose report flow on a learning atlas.
+For professional communication and narrative reports, this outline also defines the top chapter navigation. Keep short localized navigation labels, full headings and scene membership in the same chapter model. Several scenes may belong to one main theme. Follow [workspace controls](workspace-controls.md) for targets, current-chapter synchronization and browser acceptance; do not impose a report flow on a learning atlas.
 
 ## Give the audience enough context
 
@@ -70,3 +70,7 @@ Carry the same object between scenes while each scene answers a different questi
 | “Cool but unclear” | Motion detached from input/output | Define a meaningful change or use a static comparison |
 
 Do not cover a structural problem with repeated summaries.
+
+## Default spatial presentation
+
+Use [flow canvas](flow-canvas.md) for new presentations: establish input/output, reveal meaningful steps and blockers, then explore branches and gather them for summary. Each node has a clear theme and can contain long-form content. The canvas does not imply causality or sequence between independent projects; use truthful parallel grouping. Explicit alternatives and approved existing designs take precedence.

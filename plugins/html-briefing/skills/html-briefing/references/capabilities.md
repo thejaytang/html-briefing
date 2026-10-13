@@ -18,9 +18,9 @@ This is an orchestration contract interpreted by the agent, not an automatic dep
 | Quantitative evidence | Native HTML/SVG or existing project chart tools | Data, definitions, source and intended comparison → appropriate plot with units and uncertainty | Follow data-visualization.md; simple native graphics are sufficient where accurate |
 | Empirical result tables | Semantic HTML tables | Actual analysis output → reconciled, readable table with notes | A plain semantic HTML table is sufficient; do not infer missing estimates |
 | Coordinated motion | Relevant GSAP modules selected below | Object identity and state transitions → controlled motion with stable reduced-motion state | CSS/native animation or static comparison; keep the presenter in control |
-| Raster scene, illustration, cutout or image edit | Codex system `$imagegen` | Purpose, composition, source roles and invariants → inspected final image in deliverable assets | Use the system skill; skip a personal duplicate; no silent paid API fallback or fake screenshot |
-| Matching hosted delivery in ChatGPT create/revise tasks | Available host Sites skills/tools | Canonical HTML source → matching Site and deployment URL | Read chatgpt-sites.md; respect local-only constraints; Sites is not bundled |
+| Raster scene, illustration, cutout or image edit | Codex system `$imagegen` | Purpose, composition, source roles and invariants → inspected final image in deliverable assets | Built-in image tool when available; no silent paid API fallback or fake screenshot |
 | Conversation-only mechanism exploration or preview | Host Visualize | Explanatory question → interactive chat preview | Read the exposed skill; do not treat chat preview as offline delivery |
+| Matching hosted delivery in ChatGPT create/revise tasks | Available host Sites building/hosting skills and native tools | Canonical HTML source → matching Site and successful deployment URL | Read chatgpt-sites.md; preserve local-only constraints, identity and audience; Sites is not bundled |
 | Rendered behavior and final-file QA | Host browser tools; playwright when appropriate | Final entrypoint, state sequence and viewports → observed results and evidence | If unavailable, static review only; browser acceptance remains NOT_RUN |
 
 ## GSAP selection
