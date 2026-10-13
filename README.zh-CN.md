@@ -138,10 +138,8 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-检查器与测试仅需 Python 3.10+ 标准库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/evaluation-0.5.0.md)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
+包检查器与 Python 测试使用 Python 3.10+ 标准库；画布模型检查另需 Node.js。生成的 HTML 不依赖外部运行库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/release-verification-0.7.0.json)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
 
 [来源与可选上游](plugins/html-briefing/skills/html-briefing/references/sources.md)区分借鉴来源、推荐技能和宿主文档。再分发的技能保留上游许可与署名；移出的技能套件也不列为补装建议。
 
 [MIT 许可](LICENSE)，版权所有 2026 Jay Tang，覆盖本仓库原创规则、图形和检查工具。内置技能分别保留 MIT 或 Apache-2.0，详见[第三方许可说明](plugins/html-briefing/THIRD_PARTY_NOTICES.md)；运行库和服务保留各自条款。欢迎通过 [Issues](https://github.com/thejaytang/html-briefing/issues) 反馈。
-
-画布模型检查另需 Node.js；生成的 HTML 不依赖 Node.js 或外部运行库。

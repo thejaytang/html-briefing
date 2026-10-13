@@ -1,6 +1,14 @@
 # Current state
 
-## 0.7.0 release preparation · 2026-10-13
+## 0.7.0 published · 2026-10-13
+
+- Public repository is now [html-briefing](https://github.com/thejaytang/html-briefing). [v0.7.0](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.0) is published as the latest stable release at commit `9eebe874101eed9c94f563a988e718b0dd49ecbc`; prior history and release assets are preserved.
+- Downloaded the public ZIP and checksum: all 230 files match the immutable tag, package validation passes, and the extracted builder reproduces the example. Package checks, 20 Python tests, canvas model assertions and official lead-skill validation pass. [Release evidence](project-support/release-verification-0.7.0.json).
+- Installed from the documented GitHub marketplace pinned to `v0.7.0`. The enabled installation's 190 files match the released plugin; it contains 12 skill entries. Codex system ImageGen remains unbundled, preserving remote policy. The earlier local candidate was backed up before replacement.
+- English/Chinese instructions, download targets and public release rendering verified. GitHub's browser asset list stayed at Loading; API readback and actual asset download succeeded. Post-publication records are maintained on main without replacing the tag/archive.
+- Next: validate physical trackpad, file://, other browsers/platforms and fresh-chat skill dispatch as needed. These are not established by the checks above.
+
+## Historical release preparation · 0.7.0 · 2026-10-13
 
 - User authorized renaming the public repository to `html-briefing` and publishing `v0.7.0`. Release is being prepared from current remote main plus the local flow-canvas changes. Remote rename/download verification is not yet recorded here.
 - Preserve remote commit `2446db1`: ImageGen uses the Codex system skill; the release has 12 entries (one lead and 11 helpers). The earlier local candidate incorrectly retained a duplicate ImageGen snapshot; it has been retired before publication.
@@ -8,9 +16,6 @@
 - Post-publication evidence will be recorded separately, without changing the release tag or archive. Physical trackpad, file:// execution, cross-platform behavior and fresh-chat dispatch remain outside current verification.
 
 ## Historical local candidate · 0.7.0 · 2026-10-13
-
-
-## 0.7.0 local candidate · 2026-10-13
 
 - Canonical source folder, marketplace, plugin, lead skill, UI labels and active local references are now `html-briefing`. Earlier uncommitted 0.6.0 changes are preserved. Existing GitHub URL and published tags are unchanged.
 - New presentations default to flow canvas: theme-based nodes, 1/4/9 anchored zoom, in-content branching, auto-hiding key navigation and long reading. Overview returns to page top; refocus restores the bookmark. Existing approved modes remain intact; editorial glass is optional.

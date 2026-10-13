@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-13",
+  "repository": "https://github.com/thejaytang/html-briefing",
+  "tag": "v0.7.0",
+  "commit": "9eebe874101eed9c94f563a988e718b0dd49ecbc",
+  "release": "https://github.com/thejaytang/html-briefing/releases/tag/v0.7.0",
+  "publishedAt": "2026-10-13T21:06:25Z",
+  "draft": false,
+  "prerelease": false,
+  "download": "https://github.com/thejaytang/html-briefing/releases/download/v0.7.0/html-briefing-0.7.0.zip",
+  "sha256": "43423db133935bb69582130db654def6485fbd05852cf9c235a004df8929fecd",
+  "archiveBytes": 1715962,
+  "archiveFiles": 230,
+  "publicDownloadChecksum": "PASS",
+  "downloadedArchiveTagContentEquality": "PASS",
+  "downloadedArchivePackageCheck": "PASS",
+  "downloadedBuilderReproducesExample": "PASS",
+  "pythonTests": {
+    "passed": 20
+  },
+  "canvasModelAssertions": "PASS",
+  "leadSkillMetadata": "PASS",
+  "gitMarketplaceInstall": "PASS",
+  "marketplaceRef": "v0.7.0",
+  "installedAndEnabled": true,
+  "installedPluginFiles": 190,
+  "installedSkillCount": 12,
+  "installedContentEquality": "PASS",
+  "englishAndChineseReadmeNavigation": "PASS",
+  "readmeDownloadTargets": "PASS",
+  "publicReleaseRendered": "PASS",
+  "browserAssetList": "Stayed at Loading during browser check; assets verified separately through GitHub API and actual download.",
+  "notVerified": [
+    "Physical trackpad feel",
+    "file:// execution",
+    "Native Windows/Linux and other browsers",
+    "Fresh-chat automatic skill dispatch",
+    "All optional helper runtime combinations"
+  ],
+  "notes": [
+    "Published from current remote main, preserving system ImageGen policy and removing the duplicate bundled snapshot.",
+    "Post-publication evidence is a separate main-branch documentation change; tag and release archive remain immutable."
+  ]
+}

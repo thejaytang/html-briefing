@@ -138,7 +138,7 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/evaluation-0.5.0.md) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
+The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/release-verification-0.7.0.json) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
 
 [Sources and optional upstreams](plugins/html-briefing/skills/html-briefing/references/sources.md) distinguish inspiration, recommended helpers and host documentation. Redistributed skills retain upstream licenses and credits; omitted suites are not installation recommendations.
 
