@@ -1,5 +1,10 @@
 # Current state
 
+## 0.7.4 preparation · 2026-10-15
+
+- New-creation entrypoint copies canvas sources; builder checks structure before writing. Delivery checker rejects plain HTML, missing or stale browser evidence and unrecorded alternatives. Styling and narrative remain flexible.
+- [Verification](project-support/release-verification-0.7.4.json): 27 Python tests, package/model checks and lead metadata validation pass. Clean-directory creation and all five browser evidence groups pass at 1280×720; publishing and installation verification are next. The host can still bypass scripts; evidence records are observer attestations, not automatic browser tests.
+
 ## 0.7.3 published · 2026-10-15
 
 - Double-click an overview page to enter single-page focus through the existing focus handler. Controls, hidden nodes and already-focused pages are excluded; chapter layout, disclosure and reading bookmarks are unchanged.

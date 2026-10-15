@@ -11,9 +11,9 @@
 
 **一个入口，保留已有技能，交付可查看、可操作的解释。**
 
-**0.7.3 版本：** 字体、字号层级与配色由 Impeccable 负责。每次新创作先提供 2–3 套实际页面方案，选定后再应用到全篇。章节页保留大背景色、浅色文字和镂空数字；章节标题组成最左侧纵列，所属内容向右展开；缩放锚点、展开状态和阅读位置仍独立保留。双击概览中页面的正文或背景即可进入单页聚焦；按钮保持原有操作，已聚焦时双击不重置阅读位置。
+**0.7.4 版本：** 新建演示从可编辑画布模板开始，只有你明确要求其他形式时才例外。新建命令生成画布，重建时拒绝缺失画布结构的输出；最终交付检查要求完整的浏览器验证记录，并核对最终 HTML 的摘要，普通页面和过期记录无法通过默认检查。字体配色选择、内容叙事和双击聚焦保持不变。
 
-[安装](#1-安装) · [试用请求](#3-使用) · [下载 0.7.3 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) · [版本说明](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) · [能力映射](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
+[安装](#1-安装) · [试用请求](#3-使用) · [下载 0.7.4 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.4/html-briefing-0.7.4.zip) · [版本说明](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.4) · [能力映射](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
 
 包内提供可移植的根级 `plugin.json`，并保留受支持的 Codex 兼容清单；这不等于已经验证跨宿主运行。正式标识符为 `html-briefing`，旧名为 `html-brifing`。仓库、插件市场和主技能均使用修正后的名称。这是技能编排插件，不是幻灯片编辑器或自动依赖管理器。
 
@@ -24,11 +24,11 @@
 从 GitHub 安装固定版本：
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.3
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.4
 codex plugin add html-briefing@html-briefing
 ```
 
-也可以下载 [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) 和 [SHA-256 校验文件](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip.sha256)，核对摘要后，在解压出的 `html-briefing-0.7.3` 目录中运行：
+也可以下载 [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.4/html-briefing-0.7.4.zip) 和 [SHA-256 校验文件](https://github.com/thejaytang/html-briefing/releases/download/v0.7.4/html-briefing-0.7.4.zip.sha256)，核对摘要后，在解压出的 `html-briefing-0.7.4` 目录中运行：
 
 ```sh
 codex plugin marketplace add .
@@ -62,6 +62,9 @@ Impeccable 负责视觉方向、字体字号与配色；UI UX Pro Max 在该方�
 不要求每次调用全部技能：静态图表不需要 GSAP，原生 HTML 不需要 React 模块。普通写作、代码、图表与表格使用 Agent 已有能力和项目工具。Humanizer、Ponytail 与科研发表套件仍不打包。工具与运行库在需要时检查，不静默安装。
 
 ## 3. 使用
+
+新建演示先在主技能目录运行 `scripts/new_briefing.py`，再修改复制出来的源码；只有用户明确要求其他形式时才走例外。[生成与交付检查](plugins/html-briefing/skills/html-briefing/references/flow-canvas.md#creation-and-delivery-gate)说明重建、最终文件检查和浏览器记录。检查程序不能强制宿主调用技能，也不能自动证明观察记录真实。
+
 
 新创作的首个设计步骤是[视觉方案选择](plugins/html-briefing/skills/html-briefing/references/visual-direction.md)：用相同实际内容制作 2–3 套可打开的 HTML 章节页与内容页方案，选择或调整后再应用到全篇。当前创作已选方案或用户明确跳过时不重复询问；普通修改保留现有设计。这是 Agent 执行的规则，不是程序强制的选择向导。
 
@@ -140,7 +143,7 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-包检查器与 Python 测试使用 Python 3.10+ 标准库；画布模型检查另需 Node.js。生成的 HTML 不依赖外部运行库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/release-verification-0.7.3.json)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
+包检查器与 Python 测试使用 Python 3.10+ 标准库；画布模型检查另需 Node.js。生成的 HTML 不依赖外部运行库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/release-verification-0.7.4.json)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
 
 [来源与可选上游](plugins/html-briefing/skills/html-briefing/references/sources.md)区分借鉴来源、推荐技能和宿主文档。再分发的技能保留上游许可与署名；移出的技能套件也不列为补装建议。
 

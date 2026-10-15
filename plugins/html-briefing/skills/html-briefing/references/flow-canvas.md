@@ -1,6 +1,6 @@
 # Flow canvas: default presentation mode
 
-Use this for new HTML presentations unless the user selects another mode. Preserve an existing artifact's approved mode during ordinary edits. A canvas defines narrative relationships and viewing behavior, not a fixed slide size or a card design.
+Use this for new HTML presentations unless the user explicitly requests another mode. Preserve an existing artifact's approved mode during ordinary edits. A canvas defines narrative relationships and viewing behavior, not a fixed slide size or a card design.
 
 ## Narrative and content
 
@@ -56,13 +56,21 @@ Preserve the configured language set. For a single language, omit redundant swit
 
 The bundled [HTML template](../assets/flow-canvas/presentation.template.html) and [model](../assets/flow-canvas/canvas-model.js) preserve the working fictional customer-feedback example. They are an editable starter, not a universal graph engine. No network assets, GSAP runtime or framework are needed for this starter.
 
-Build an editable, self-contained HTML file with the [builder](../scripts/build_flow_canvas.py):
+New presentations must begin with the [creation entrypoint](../scripts/new_briefing.py), unless the user explicitly requests another form:
 
 ```sh
-python3 scripts/build_flow_canvas.py --output /path/to/project/presentation.html
+python3 scripts/new_briefing.py --directory /path/to/new-briefing
 ```
 
-Run that command from this skill directory, or invoke the builder by its absolute path. Existing output is protected unless `--force` is supplied. For continued authoring, copy the template/model into the project's existing source structure and pass `--template` and `--model` to the builder. Never customize the installed plugin cache as a project source.
+The destination must not exist. It creates `presentation.template.html`, `canvas-model.js` and the rebuildable `presentation.html`. Preserve these authoring sources and user materials; replace the fictional case with the actual narrative. Use the same canvas sources for the 2–3 visual directions, varying typography/color rather than navigation mode.
+
+Rebuild the edited sources with the [builder](../scripts/build_flow_canvas.py):
+
+```sh
+python3 scripts/build_flow_canvas.py --template /path/to/new-briefing/presentation.template.html --model /path/to/new-briefing/canvas-model.js --output /path/to/new-briefing/presentation.html --force
+```
+
+Run that command from this skill directory, or invoke the builder by its absolute path. Existing output is protected unless `--force` is supplied. The builder checks canvas structure before writing, including on forced rebuilds. Keep the starter’s controller identifiers; adapting content, layout and styling does not require replacing them. For continued authoring, copy the template/model into the project's existing source structure and pass `--template` and `--model` to the builder. Never customize the installed plugin cache as a project source.
 
 Adapt the template's `cards` and `slideContent` objects, node-specific visuals, labels and language. Adapt the model's `parents` and `layout`, plus corresponding content-trigger mapping and summary/lane rendering, together when changing narrative topology. Retain stable node IDs, explicit ownership and one authoritative model for navigation and scene state. HTML fragments in the template are trusted authored markup; escape untrusted content before insertion. The demo's dimensions, palette, three lane names and animation duration are tuning choices, not mode requirements.
 
@@ -81,3 +89,46 @@ Test actual final files, not just model output:
 7. Check the extracted self-contained HTML offline, then the intended browser and physical input hardware. Model checks, browser checks, native trackpad feel and cross-platform acceptance are distinct evidence.
 
 Do not claim all seven groups pass from a successful build or copied prototype evidence. Record which checks ran against the delivered package.
+
+
+## Creation and delivery gate
+
+Run the packaged scripts from the skill directory, or invoke their absolute paths; asset lookup is relative to the scripts, not the caller’s working directory. The Python 3.10+ standard library is sufficient. Do not substitute a package self-test for checking the actual presentation.
+
+During authoring:
+
+```sh
+python3 scripts/check_presentation.py /path/to/new-briefing/presentation.html --structural-only
+```
+
+This rejects plain pages and missing starter DOM/controller/input hooks. It prints the artifact SHA-256 and explicitly leaves browser acceptance UNVERIFIED. It does not execute JavaScript, prove behavior, judge storytelling, or prevent a host from bypassing the scripts. Do not fix a failure by adding inert marker strings or waiving the mode without a user request.
+
+Before delivery, inspect the final file with the available browser, then save a small JSON record alongside existing project evidence. Use the final file’s printed SHA-256. Record actual observations for all five groups below, with `status: "PASS"` only after the relevant behaviors work; use `FAIL` or `UNVERIFIED` otherwise. The record attests observations; the checker verifies completeness and artifact identity, not whether an observer is truthful.
+
+```json
+{
+  "artifact_sha256": "SHA-256 of the inspected HTML",
+  "environment": "Actual browser, viewport and input used",
+  "checks": {
+    "layout": {"status": "UNVERIFIED", "evidence": ""},
+    "navigation_zoom": {"status": "UNVERIFIED", "evidence": ""},
+    "focus": {"status": "UNVERIFIED", "evidence": ""},
+    "disclosure": {"status": "UNVERIFIED", "evidence": ""},
+    "reading": {"status": "UNVERIFIED", "evidence": ""}
+  }
+}
+```
+
+- `layout`: chapter titles left, owned content right, visible node ownership.
+- `navigation_zoom`: two-axis navigation, 1/4/9 zoom and current-node anchoring without folding branches.
+- `focus`: double-click enters full-stage focus; controls retain actions.
+- `disclosure`: local detail and structural expansion/collapse behave separately.
+- `reading`: long-page scrolling, overview top and bookmark restoration. If the actual presentation has no long content, record that observed fact and why the reading check is not applicable rather than fabricate a scroll test.
+
+```sh
+python3 scripts/check_presentation.py /path/to/new-briefing/presentation.html --browser-report /path/to/browser-checks.json
+```
+
+Exit 0 means the structure and complete matching evidence record pass; exit 1 means failed checks; exit 2 means missing browser evidence. Recheck after changes: the old record cannot pass for changed HTML. Report physical trackpad, offline and cross-platform checks separately; keyboard/browser verification does not establish them.
+
+For an explicitly requested alternative, pass `--alternative-request "exact user request"`. Keep the same quote in the report’s `user_request` and replace the five canvas checks with `alternative_behavior`, with observed evidence for the requested mode. This reports an explicit alternative, never a canvas pass. The software cannot authenticate human authorization: the agent must verify it in the conversation. Ordinary edits to an already approved non-canvas artifact keep its existing validation workflow; this new-creation gate does not authorize migrating it.

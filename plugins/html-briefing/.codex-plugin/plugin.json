@@ -1,6 +1,6 @@
 {
   "name": "html-briefing",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Evidence-led HTML briefings with a default flow canvas, presenter-controlled zoom, progressive disclosure and long-form reading; optional visual helpers and browser verification.",
   "author": {
     "name": "Jay Tang",
@@ -15,7 +15,7 @@
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "Use $html-briefing to create an offline flow-canvas project briefing.",
+      "Use $html-briefing to initialize my new presentation from the bundled flow-canvas template and validate the final artifact; use another form only if I explicitly request it.",
       "Use $html-briefing to review this existing HTML presentation."
     ],
     "brandColor": "#126B61",

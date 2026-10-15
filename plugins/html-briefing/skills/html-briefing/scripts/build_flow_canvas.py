@@ -2,6 +2,7 @@
 """Build the local canvas starter without dependencies or network access."""
 import argparse
 from pathlib import Path
+import runpy
 
 
 def build(template, model, output, force=False):
@@ -15,6 +16,10 @@ def build(template, model, output, force=False):
     if '</script' in code.lower():
         raise ValueError('Model contains an unsafe closing script tag')
     html = html.replace('/* MODEL */', code)
+    check_html = runpy.run_path(str(Path(__file__).with_name('check_presentation.py')))['check_html']
+    errors = check_html(html)
+    if errors:
+        raise ValueError('Invalid canvas: ' + '; '.join(errors))
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open('w' if force else 'x', encoding='utf-8') as stream:
         stream.write(html)

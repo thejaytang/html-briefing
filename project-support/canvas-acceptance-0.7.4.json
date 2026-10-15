@@ -1,0 +1,26 @@
+{
+  "artifact_sha256": "15fda12532ebe4af287076bfa026b6cb2e896614499a265652ff506eb1da36d3",
+  "environment": "Codex in-app browser, 1280x720, localhost; semantic clicks, keyboard and browser scroll",
+  "checks": {
+    "layout": {
+      "status": "PASS",
+      "evidence": "Expanded chapter 02 at x98,y32; data/business/engineering at x467/836/1205,y32; next chapter below at y263."
+    },
+    "navigation_zoom": {
+      "status": "PASS",
+      "evidence": "ArrowDown moved chapters; ArrowRight moved data to engineering; 1/4/9 views retained branches. Engineering focused at x0,width1280, overview center remained x640."
+    },
+    "focus": {
+      "status": "PASS",
+      "evidence": "Double-clicked data heading from overview; resulting page measured 1280x720. Engineering detail button opened local text."
+    },
+    "disclosure": {
+      "status": "PASS",
+      "evidence": "Steps expanded to five pages, perspectives to eight. Engineering detail opened independently; 收回本章 returned to five pages and 展开三个视角 trigger."
+    },
+    "reading": {
+      "status": "PASS",
+      "evidence": "Long data page scrolled to675 (clientHeight506,scrollHeight3606); overview showed0, returning to focus restored675."
+    }
+  }
+}

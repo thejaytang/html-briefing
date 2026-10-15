@@ -14,7 +14,8 @@ Read applicable project instructions and current source materials. Find the auth
 
 - **Discussion / planning:** inspect materials and propose a narrative; do not build, install or publish.
 - **Review only:** inspect and report findings; do not modify the presentation.
-- **Create / revise:** implement and validate the authorized scope. A small edit does not trigger a full redesign or a new approval sequence.
+- **Create:** use `scripts/new_briefing.py --directory <new-project-directory>` before visual implementation. This copies the bundled canvas template/model and builds the initial HTML. New HTML presentations use this path unless the user explicitly requests another form. Do not infer an exception from the topic, duration, helper preference or a generic request for slides.
+- **Revise:** preserve the approved existing mode and implement the scoped edit; do not silently migrate an existing presentation. A small edit does not trigger a new visual-selection round.
 
 Check required tools only when the task reaches them; do not start every briefing with a full setup inventory. Read [environment checks](references/setup.md) if a needed capability is missing or the user explicitly asks to check the environment. For “check environment only” or “只检查环境”, report readiness and stop. Reuse established availability for small edits.
 
@@ -30,7 +31,7 @@ Use this argument where appropriate: context and importance → concrete problem
 
 Write a short title outline before visual work. Titles alone should reveal the argument. Keep test method, observation and supported conclusion together. Read [narrative.md](references/narrative.md) when planning or restructuring. Storytelling belongs to this lead: choose an audience takeaway, build a claim-to-evidence argument, choose a suitable narrative shape and make scene transitions explain the next question. Do not delegate this responsibility to a generic writing skill or force a fixed chapter template. Reuse existing project records rather than creating paperwork for a small edit.
 
-For new presentations, use the [flow canvas](references/flow-canvas.md) by default. Establish the input, desired output, core steps and blockers, then reveal relevant branches. Place chapter titles in the leftmost vertical column, with each chapter’s content unfolding to the right; focus and zoom remain anchored to the current page. Adapt the argument to the actual material; do not fabricate a process or force this example’s page count. Preserve approved existing designs and explicit alternatives. Key-node navigation is an auto-hiding overlay that focuses existing nodes without changing their expansion state.
+For new presentations, use the [flow canvas](references/flow-canvas.md) unless the user explicitly requests another form. Establish the input, desired output, core steps and blockers, then reveal relevant branches. Place chapter titles in the leftmost vertical column, with each chapter’s content unfolding to the right; focus and zoom remain anchored to the current page. Adapt the argument to the actual material; do not fabricate a process or force this example’s page count. Preserve approved existing designs and explicit alternatives. Key-node navigation is an auto-hiding overlay that focuses existing nodes without changing their expansion state.
 
 ## 3. Design scenes and select visual media
 
@@ -48,9 +49,9 @@ Use an available host Visualize skill for conversation-only mechanism exploratio
 
 ## 4. Implement the explanation
 
-Reuse existing components and reasonable project architecture. A new standalone briefing can start with semantic HTML, CSS, SVG and a small amount of JavaScript. Add a framework only when state or authoring needs warrant it. Keep content, language, selection state and animation control distinguishable. Start canvas work from the bundled [template and build instructions](references/flow-canvas.md#starter-and-authoring); preserve the tested gesture/geometry behavior while replacing the fictional narrative and layout with the actual project.
+Reuse existing components and reasonable project architecture. For a new briefing, customize the canvas sources created by the required entrypoint; do not start from a blank HTML page or substitute a helper’s slide template. Add a framework only when state or authoring needs warrant it. Keep content, language, selection state and animation control distinguishable. Start canvas work from the bundled [template and build instructions](references/flow-canvas.md#starter-and-authoring); preserve the tested gesture/geometry behavior while replacing the fictional narrative and layout with the actual project.
 
-Default to presenter-controlled, naturally extending scenes for live use. Asynchronous readers must understand the core argument without narration. Fixed slides, side navigation, title syntax, loops and visual style are project choices; do not impose a past project's layout. See [experience.md](references/experience.md) for reusable lessons and overridable defaults.
+Default to presenter-controlled, naturally extending scenes for live use. Asynchronous readers must understand the core argument without narration. Content, typography, palette and narrative remain flexible within the canvas. Another presentation mode requires the user’s explicit request. See [experience.md](references/experience.md) for reusable lessons and overridable defaults.
 
 Use GSAP only when coordinated sequences or shared-object transitions need it. Use generated images for suitable raster subjects; precise labels, data, connections and interactive state remain editable. Write clear titles and explanations directly, preserving evidence and meaning. Ordinary writing, coding, charts and tables do not require an additional skill. Follow the host agent’s existing competence and applicable project rules.
 
@@ -58,7 +59,7 @@ A new standalone local briefing should open offline unless the project specifies
 
 ## 5. Verify and deliver
 
-Read [validation-delivery.md](references/validation-delivery.md). Define necessary acceptance checks before running them. Inspect the actual final files with the host's permitted browser tools; use an available Playwright skill when appropriate. Static checks cannot prove rendering, motion, Windows behavior or offline runtime operation.
+Read [validation-delivery.md](references/validation-delivery.md). Run `scripts/check_presentation.py <final.html> --browser-report <report.json>` before delivery, using the [artifact-bound evidence contract](references/flow-canvas.md#creation-and-delivery-gate). Missing, failed or stale evidence leaves acceptance incomplete. For an explicitly requested alternative, add `--alternative-request` with the exact user request and validate that mode; never invent authorization. Define necessary acceptance checks before running them. Inspect the actual final files with the host's permitted browser tools; use an available Playwright skill when appropriate. Static checks cannot prove rendering, motion, Windows behavior or offline runtime operation.
 
 For feedback, diagnose the cause: “confusing” may mean missing context; “busy” may mean competing themes; “pointless animation” may mean no explanatory state change. Correct shared causes while preserving approved facts and design decisions.
 

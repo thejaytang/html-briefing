@@ -1,4 +1,4 @@
 interface:
   display_name: "HTML Briefing"
   short_description: "Flow-canvas briefings with zoom and progressive disclosure"
-  default_prompt: "Use $html-briefing to turn my project materials into an evidence-led, offline flow-canvas HTML briefing."
+  default_prompt: "Use $html-briefing to create an offline flow-canvas briefing from the bundled template and run its final-artifact acceptance checks; use another mode only if I explicitly request it."

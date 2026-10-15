@@ -1,15 +1,15 @@
 # Installation and maintenance
 
-The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.3` release.
+The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.4` release.
 
 ## Install from GitHub
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.3
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.4
 codex plugin add html-briefing@html-briefing
 ```
 
-The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
+The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.4) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
 
 ## Local installation and name migration
 
@@ -18,6 +18,10 @@ From the extracted repository root, run `codex plugin marketplace add .`, then `
 For an explicitly authorized rename, preserve a backup of the old installed plugin and personal compatibility entry. After new-install verification, remove only `html-brifing@html-brifing` with the host CLI and remove only its old marketplace registration. Retire the old personal compatibility pointer outside skill-discovery roots if it conflicts with the new `html-briefing` entry. Do not alter unrelated skills or plugin permissions. This procedure is not an automatic installation hook.
 
 Do not change old release archives, tags or evidence records. Older links and tags belong to their historical versions. New releases require authorization and remote verification. Do not hand-edit cache files or marketplace registries to simulate installation.
+
+## Creating and checking presentations
+
+From the lead skill directory, run `python3 scripts/new_briefing.py --directory <new-directory>`. Customize the copied template/model and rebuild with `scripts/build_flow_canvas.py`; never edit installed cache files. Before delivery run `scripts/check_presentation.py <final.html> --browser-report <report.json>`. The [canvas guide](../plugins/html-briefing/skills/html-briefing/references/flow-canvas.md#creation-and-delivery-gate) defines evidence, exit codes and explicit user-requested alternatives. Missing evidence is not a pass.
 
 ## Source and validation
 

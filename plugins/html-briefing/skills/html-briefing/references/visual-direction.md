@@ -27,7 +27,7 @@ Define shared roles for chapter display, headings, body, captions, numeric evide
 
 Preserve readable contrast on each background and text/shape labels alongside perspective colors. Overview may show partial neighboring nodes; focus must stay readable. Preserve the selected type hierarchy without stretching glyphs or squeezing long content into a fixed slide.
 
-The lead still owns storytelling and evidence. Visual choice does not authorize rewriting claims, removing content, changing emphasis or rearranging branches. Canvas mode describes relationships and navigation; it does not replace the narrative. Input/desired output explain the starting point and target, not necessarily the final finding. Zoom, disclosure and reading behavior remain governed by [flow-canvas.md](flow-canvas.md).
+Generate new-briefing alternatives from the initialized canvas sources; typography/color selection does not authorize switching to ordinary slides or a scrolling webpage. The lead still owns storytelling and evidence. Visual choice does not authorize rewriting claims, removing content, changing emphasis or rearranging branches. Canvas mode describes relationships and navigation; it does not replace the narrative. Input/desired output explain the starting point and target, not necessarily the final finding. Zoom, disclosure and reading behavior remain governed by [flow-canvas.md](flow-canvas.md).
 
 ## Acceptance and handoff
 

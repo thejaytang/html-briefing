@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "version": "0.7.4",
+  "status": "READY_FOR_RELEASE",
+  "scope": "Canvas-first creation and artifact-bound acceptance gate",
+  "checks": {
+    "pythonTests": 27,
+    "package": "PASS",
+    "canvasModel": "PASS",
+    "leadSkillMetadata": "PASS",
+    "newCreation": "PASS",
+    "plainHtmlRejected": "PASS",
+    "missingInteractionRejectedBeforeOverwrite": "PASS",
+    "staleEvidenceRejected": "PASS",
+    "missingBrowserEvidence": "UNVERIFIED exit 2 as intended",
+    "explicitAlternative": "PASS synthetic authorization fixture",
+    "browserAcceptance": "project-support/canvas-acceptance-0.7.4.json",
+    "browserConsoleErrors": 0
+  },
+  "notVerified": [
+    "Fresh-chat automatic skill dispatch",
+    "Physical trackpad",
+    "file:// runtime",
+    "Cross-platform runtime"
+  ]
+}
