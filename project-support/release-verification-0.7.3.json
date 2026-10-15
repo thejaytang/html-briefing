@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "version": "0.7.3",
-  "status": "READY_FOR_RELEASE",
+  "status": "PUBLISHED",
   "scope": "Double-click overview pages to enter single-page focus",
   "checks": {
     "canvasModel": "PASS",
@@ -10,7 +10,16 @@
     "package": "PASS",
     "pythonTests": 21,
     "browserDoubleClickFocus": "PASS: overview to full 1280x720 stage",
-    "browserConsoleErrors": 0
+    "browserConsoleErrors": 0,
+    "publicDownloadChecksum": "PASS",
+    "publicArchiveTagEquality": "PASS",
+    "downloadedBuilder": "PASS",
+    "downloadedDoubleClickGuards": "PASS",
+    "gitMarketplaceInstall": "PASS",
+    "localInstalledFiles": 191,
+    "installedReleaseByteEquality": "PASS",
+    "bilingualReadmeNavigation": "PASS",
+    "publicReleaseRendered": "PASS"
   },
   "initialFailure": "Package link check and two tests failed before the new verification record existed; resolved by adding this record.",
   "notVerified": [
@@ -18,5 +27,12 @@
     "file:// runtime",
     "Cross-platform runtime",
     "Fresh-chat dispatch"
-  ]
+  ],
+  "sha256": "f8c42909aa7bbc3a563e15e158d3e49d8cab9dafa1872b2ab5c37ab7a8da8393",
+  "archiveFiles": 236,
+  "archiveBytes": 1727250,
+  "commit": "f9ebfc36e01a62b7e3315a5e4548e3b4118e7f61",
+  "tag": "v0.7.3",
+  "release": "https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3",
+  "publishedAt": "2026-10-15T10:30:55Z"
 }

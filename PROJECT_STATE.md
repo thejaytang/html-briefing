@@ -1,9 +1,9 @@
 # Current state
 
-## 0.7.3 release preparation · 2026-10-15
+## 0.7.3 published · 2026-10-15
 
 - Double-click an overview page to enter single-page focus through the existing focus handler. Controls, hidden nodes and already-focused pages are excluded; chapter layout, disclosure and reading bookmarks are unchanged.
-- Updated bilingual usage/install links, lead guidance, template, built example and focused regression checks. Package checks, 21 Python tests (including double-click guards), model assertions and lead-skill validation pass. The packaged example fills the 1280×720 stage after double-click; no console errors observed. [Evidence](project-support/release-verification-0.7.3.json). Release/download/install verification is pending.
+- Updated bilingual usage/install links, lead guidance, template, built example and focused regression checks. Package checks, 21 Python tests (including double-click guards), model assertions and lead-skill validation pass. The packaged example fills the 1280×720 stage after double-click; no console errors observed. [Evidence](project-support/release-verification-0.7.3.json). Published [v0.7.3](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) at `f9ebfc36e01a62b7e3315a5e4548e3b4118e7f61`. Downloaded ZIP checksum and all 236 tagged files match; extracted builder and double-click guards pass. Local enabled installation matches all 191 plugin files. Public bilingual navigation, version links and release page verified. Physical trackpad, file://, cross-platform runtime and fresh-chat dispatch remain unverified.
 
 ## 0.7.2 published · 2026-10-15
 
