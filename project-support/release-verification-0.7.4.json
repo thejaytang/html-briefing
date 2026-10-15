@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "version": "0.7.4",
-  "status": "READY_FOR_RELEASE",
+  "status": "PUBLISHED",
   "scope": "Canvas-first creation and artifact-bound acceptance gate",
   "checks": {
     "pythonTests": 27,
@@ -15,12 +15,28 @@
     "missingBrowserEvidence": "UNVERIFIED exit 2 as intended",
     "explicitAlternative": "PASS synthetic authorization fixture",
     "browserAcceptance": "project-support/canvas-acceptance-0.7.4.json",
-    "browserConsoleErrors": 0
+    "browserConsoleErrors": 0,
+    "publicDownloadChecksum": "PASS",
+    "publicArchiveTagEquality": "PASS",
+    "downloadedCreationAndGate": "PASS on identical artifact bytes",
+    "downloadedGateTests": 6,
+    "localInstalledFiles": 193,
+    "installedReleaseByteEquality": "PASS",
+    "gitMarketplaceInstall": "PASS",
+    "bilingualReadmeNavigation": "PASS",
+    "publicReleaseRendered": "PASS"
   },
   "notVerified": [
     "Fresh-chat automatic skill dispatch",
     "Physical trackpad",
     "file:// runtime",
     "Cross-platform runtime"
-  ]
+  ],
+  "sha256": "3239490d8c4942ebb242d73d160a3d19ab57c93de4481c1b808f6abdcadd9280",
+  "archiveFiles": 241,
+  "archiveBytes": 1736603,
+  "commit": "f9ef0075958dabfad6dedfeb39a3bd7d96eced6c",
+  "tag": "v0.7.4",
+  "release": "https://github.com/thejaytang/html-briefing/releases/tag/v0.7.4",
+  "publishedAt": "2026-10-15T12:38:11Z"
 }

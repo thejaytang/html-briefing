@@ -1,9 +1,9 @@
 # Current state
 
-## 0.7.4 preparation · 2026-10-15
+## 0.7.4 published · 2026-10-15
 
 - New-creation entrypoint copies canvas sources; builder checks structure before writing. Delivery checker rejects plain HTML, missing or stale browser evidence and unrecorded alternatives. Styling and narrative remain flexible.
-- [Verification](project-support/release-verification-0.7.4.json): 27 Python tests, package/model checks and lead metadata validation pass. Clean-directory creation and all five browser evidence groups pass at 1280×720; publishing and installation verification are next. The host can still bypass scripts; evidence records are observer attestations, not automatic browser tests.
+- [Verification](project-support/release-verification-0.7.4.json): 27 Python tests, package/model checks and lead metadata validation pass. Clean-directory creation and all five browser evidence groups pass at 1280×720; published [v0.7.4](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.4) at `f9ef0075958dabfad6dedfeb39a3bd7d96eced6c`. Public archive checksum and all 241 tagged files match; creation/gate checks work from the extracted package. Enabled local installation matches all 193 files. Fresh-chat dispatch, physical trackpad, file:// and cross-platform remain unverified. The host can still bypass scripts; evidence records are observer attestations, not automatic browser tests.
 
 ## 0.7.3 published · 2026-10-15
 
