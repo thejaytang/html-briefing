@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-15",
+  "version": "0.7.2",
+  "status": "PREPUBLICATION_VERIFIED",
+  "scope": "Leftmost chapter column with rightward content layout; retain 0.7.1 visual selection",
+  "notVerified": [
+    "Physical trackpad",
+    "file://",
+    "Cross-platform runtime",
+    "Fresh-chat full visual-selection workflow"
+  ],
+  "checks": {
+    "package": "PASS",
+    "pythonTests": 20,
+    "canvasModel": "PASS",
+    "leadSkillMetadata": "PASS",
+    "browserLayout": "PASS",
+    "browserOuterNodeFocus": "PASS",
+    "browserInternalScroll": "PASS",
+    "browserReadingRestoration": "PASS (675px -> overview 0 -> focus 675px)",
+    "browserNestedCollapse": "PASS",
+    "browserConsoleErrors": 0,
+    "localInstalledFiles": 191,
+    "localInstalledByteEquality": "PASS"
+  },
+  "layoutDetector": {
+    "status": "REVIEWED_WARNING",
+    "finding": "monotonous-spacing: 8px used in 9/12 detected values",
+    "disposition": "Existing compact navigation/control spacing is unchanged; chapter/content separation uses the deliberate 1280x800 canvas grid. No blanket restyling for this warning."
+  }
+}

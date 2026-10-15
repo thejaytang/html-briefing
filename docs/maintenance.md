@@ -1,15 +1,15 @@
 # Installation and maintenance
 
-The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.1` release.
+The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.2` release.
 
 ## Install from GitHub
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.1
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.2
 codex plugin add html-briefing@html-briefing
 ```
 
-The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.1) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
+The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
 
 ## Local installation and name migration
 

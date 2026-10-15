@@ -15,6 +15,8 @@ For ordinary revisions, preserve the approved direction and perform the requeste
 
 ## Chapter-page identity
 
+Place chapter title pages in a leftmost vertical column, with owned content unfolding rightward and later chapters below. This geometry does not pin the title on screen during focus or zoom.
+
 For new briefings, retain the agreed chapter language across the alternatives: **large background-color fields, light foreground text and oversized hollow/outline chapter numerals**. Hue and font are flexible; this composition is not. Keep the numeral secondary to the theme and treat it as decoration with an accessible textual chapter label. Use a real outline treatment, not a faint solid numeral. Ordinary content/evidence pages may use light surfaces where reading benefits; do not force every node into a chapter cover.
 
 Respect explicit brand/accessibility requirements and user-selected exceptions. Preserve existing approved designs during ordinary edits. When adapting the fictional canvas starter, replace its illustrative colors and solid numerals with the chosen direction; the starter demonstrates behavior, not a preapproved visual selection.

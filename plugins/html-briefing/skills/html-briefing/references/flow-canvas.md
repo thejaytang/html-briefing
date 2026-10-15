@@ -8,13 +8,13 @@ Begin with input (what exists at this business stage) and output (what the work 
 
 Each node has one clear theme, a readable argument and an appropriate main visual. New chapter scenes retain large background-color fields, light text and oversized outline chapter numerals, following [visual direction and selection](visual-direction.md). This visual contract leaves font and palette choice open; approved existing designs remain unchanged during ordinary edits. A node may contain more than one screen of content. Never shrink long content into a fixed-height slide or turn every node into a generic card. Keep core conclusions visible; details supplement them.
 
-Use a vertical centered main line. Arrange parallel perspectives side by side with continuous background bands and labels outside the nodes. Data science, business and AI engineering are a fictional example, not mandatory labels or a fixed number of perspectives. Connections distinguish sequence from ownership and dependency.
+Place every chapter title page in the leftmost vertical column; chapters progress downward. Expand the content owned by each chapter to its right, with the first content row aligned to that chapter. Reserve additional rows for deeper content before the next chapter. Arrange parallel perspectives side by side to the right, retaining continuous background bands and labels outside the nodes. This is graph placement, not a pinned sidebar: focused pages still fill the stage. Data science, business and AI engineering are a fictional example, not mandatory labels or a fixed number of perspectives. Connections distinguish sequence from ownership and dependency.
 
 ## Independent states
 
 Keep the node graph, explicit structural expansion, local explanation disclosure, camera (center/scale), and per-node reading bookmarks separate. Navigation and zoom must not change the graph or erase disclosures/bookmarks. Only explicit in-content expansion/collapse changes visible descendants. A collapsed branch may retain its local state for reopening; inactive content must not remain in keyboard navigation.
 
-Main-flow views and structural transitions center the spine by default. Deliberate horizontal navigation may center any side node. Subsequent zoom retains that node as its anchor; never pull the camera back to the spine merely because the scale changed. Moving to a main-only row recenters that row.
+Main-only views may center the chapter being read. During expansion, show the owning chapter at the left of the overview and its content to the right; collapse returns content to that chapter. Deliberate horizontal navigation may center any content node. Subsequent zoom retains that node as its anchor; never pull the camera back to the spine merely because the scale changed. Moving to a chapter-only row focuses that chapter column.
 
 ## Input contract
 
@@ -69,7 +69,7 @@ Reuse projection, zoom-anchor, snap and reading-gesture behavior with the packag
 
 Test actual final files, not just model output:
 
-1. Open branches and local explanations; switch 1→4→9→1. The same content remains open.
+1. Check that every chapter is in the leftmost column and owned pages unfold to its right without displacing it into the middle. Open branches and local explanations; switch 1→4→9→1. The same content remains open.
 2. Center each outer node and zoom to focus. Its identity stays centered; partial neighbors remain visible in overview.
 3. Expand and collapse a nested branch. Its parent remains understandable; keyboard focus moves to a surviving owner if needed.
 4. Read a long node at top, middle and bottom. Same-gesture edge inertia holds; a new outward gesture moves one node. Reverse scroll reads inward.

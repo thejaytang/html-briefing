@@ -1,5 +1,10 @@
 # Current state
 
+## 0.7.2 candidate · 2026-10-15
+
+- Chapter titles share the leftmost column; content and parallel perspectives unfold to their right. The model, bounds, snap stops, connectors and perspective bands follow the new positions. Focus still fills the stage and zoom follows the current node.
+- Retains 0.7.1 Impeccable visual selection. Existing narrative and reading/disclosure semantics remain intact. [Validation](project-support/release-verification-0.7.2.json). Package checks, 20 Python tests, model assertions and skill validation pass. Browser checks at 1280×720 confirm rightward layout, outer-node full-stage focus, long-page scroll/bookmark restoration and nested collapse; no console errors observed. Local 0.7.2 installation matches 191 files. Publication pending.
+
 ## 0.7.1 published · 2026-10-15
 
 - Impeccable owns fonts, type scale and palette. New creations provide 2–3 real-page directions and wait for selection before full styling; ordinary revisions and an explicit waiver preserve user scope.

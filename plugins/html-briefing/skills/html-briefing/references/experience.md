@@ -33,4 +33,4 @@ Change rules in response to reproducible failures or a demonstrated recurring ne
 
 ## Flow canvas default
 
-New presentations default to [flow canvas](flow-canvas.md). This is a presentation/navigation model, not a fixed page-size or card-style requirement. Main-flow centering is the default; deliberate side-node centering is retained through zoom. Keep view changes independent from disclosure and reading memory.
+New presentations default to [flow canvas](flow-canvas.md). This is a presentation/navigation model, not a fixed page-size or card-style requirement. Chapter titles form the leftmost vertical column and content unfolds to their right. A focused page fills the stage; deliberate content-node centering is retained through zoom. Keep view changes independent from disclosure and reading memory.

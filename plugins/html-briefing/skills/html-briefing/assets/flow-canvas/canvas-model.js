@@ -5,7 +5,7 @@ const CanvasModel = (() => {
   const PAGE_H = 675;
   const PAGE_X = (CELL_W - PAGE_W) / 2;
   const PAGE_Y = (CELL_H - PAGE_H) / 2;
-  const centerCol = size => 1.5 - size / 2;
+  const centerCol = size => .5 - size / 2;
 
   const parents = {prepare:'input',decide:'input',verify:'input',data:'decide',business:'decide',engineering:'decide',sample:'data'};
   function survivingParent(id, scene) {
@@ -62,27 +62,26 @@ const CanvasModel = (() => {
   }
 
   function layout({ steps = false, perspectives = false, evidence = false } = {}) {
-    const nodes = [{ id: 'input', col: 1, row: 0 }];
+    const nodes = [{ id: 'input', col: 0, row: 0 }];
     const edges = [];
     if (!steps) {
-      nodes.push({ id: 'output', col: 1, row: 1 });
+      nodes.push({ id: 'output', col: 0, row: 1 });
       edges.push({ from: 'input', to: 'output', kind: 'main' });
     } else {
-      nodes.push({ id: 'prepare', col: 1, row: 1 }, { id: 'decide', col: 1, row: 2 });
+      nodes.push({ id: 'prepare', col: 0, row: 1 }, { id: 'decide', col: 0, row: 2 });
       let nextRow = 3;
       if (perspectives) {
         ['data', 'business', 'engineering'].forEach((id, col) => {
-          nodes.push({ id, col, row: 3, lane: id });
+          nodes.push({ id, col: col + 1, row: 2, lane: id });
           edges.push({ from: 'decide', to: id, kind: 'perspective' });
         });
-        nextRow += 1;
         if (evidence) {
-          nodes.push({ id: 'sample', col: 0, row: 4, lane: 'data' });
+          nodes.push({ id: 'sample', col: 1, row: 3, lane: 'data' });
           edges.push({ from: 'data', to: 'sample', kind: 'detail' });
           nextRow += 1;
         }
       }
-      nodes.push({ id: 'verify', col: 1, row: nextRow }, { id: 'output', col: 1, row: nextRow + 1 });
+      nodes.push({ id: 'verify', col: 0, row: nextRow }, { id: 'output', col: 0, row: nextRow + 1 });
       const main = ['input', 'prepare', 'decide', 'verify', 'output'];
       main.slice(1).forEach((id, index) => edges.push({ from: main[index], to: id, kind: 'main' }));
     }
@@ -98,7 +97,7 @@ const CanvasModel = (() => {
   function clampView({ col, row, size }, scene) {
     if (![1, 2, 3].includes(size)) throw new RangeError('View size must be 1, 2, or 3.');
     return {
-      col: scene.hasBranches ? Math.max(.5 - size / 2, Math.min(col, 2.5 - size / 2)) : centerCol(size),
+      col: scene.hasBranches ? Math.max(.5 - size / 2, Math.min(col, scene.maxCol + .5 - size / 2)) : centerCol(size),
       row: Math.max(0, Math.min(row, Math.max(0, scene.maxRow - size + 1))),
       size,
     };
@@ -107,8 +106,7 @@ const CanvasModel = (() => {
   function viewForNode(id, size, scene, current) {
     const node = scene.nodes.find(candidate => candidate.id === id);
     if (!node) throw new Error(`Unknown node: ${id}`);
-    let col = centerCol(size);
-    if (node.lane) col = size === 1 ? node.col : size === 2 ? (node.col === 0 ? 0 : node.col === 2 ? 1 : .5) : 0;
+    const col = node.col + .5 - size / 2;
     const view = clampView({ col, row: Math.round(current?.row ?? node.row), size }, scene);
     if (node.row < view.row) view.row = node.row;
     else if (node.row + 1 > view.row + size) view.row = node.row - size + 1;
@@ -117,7 +115,9 @@ const CanvasModel = (() => {
 
   function horizontalStops(view, scene) {
     const hasVisibleBranches = scene.nodes.some(node => node.lane && node.row >= view.row && node.row < view.row + view.size);
-    return hasVisibleBranches ? view.size === 1 ? [0, 1, 2] : view.size === 2 ? [-.5, 0, .5, 1, 1.5] : [-1, 0, 1] : [centerCol(view.size)];
+    if (!hasVisibleBranches) return [centerCol(view.size)];
+    const step = view.size === 2 ? .5 : 1;
+    return Array.from({length: scene.maxCol / step + 1}, (_, i) => centerCol(view.size) + i * step);
   }
 
   function snapView({ col, row, size }, scene) {

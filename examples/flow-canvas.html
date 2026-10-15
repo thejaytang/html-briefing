@@ -13,7 +13,7 @@
 .workspace{display:flex;flex:1;min-height:0;position:relative}.stage{position:relative;flex:1;min-width:0;display:flex;align-items:center;justify-content:center;overflow:clip;background:#edf0f1;touch-action:none;cursor:grab}.stage:active{cursor:grabbing}.viewport{position:relative;overflow:visible;isolation:isolate;cursor:grab}.viewport:focus{outline:none}.viewport:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform;user-select:none}.connections{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}.edge{fill:none;stroke:#8396a2;stroke-width:3;stroke-linejoin:round}.edge.transition-link{stroke:#b55232;stroke-width:5}.edge.perspective{stroke-width:2.5}.edge.detail{stroke:var(--blue);stroke-dasharray:7 6}.lane-band{position:absolute;width:1280px;pointer-events:none}.lane-band.data{background:#dbeaf3}.lane-band.business{background:#e0ebdf}.lane-band.engineering{background:#f0e6d5}.lane-caption{position:absolute;left:40px;top:9px;font-size:30px;font-weight:600;letter-spacing:.05em;color:var(--blue)}.business .lane-caption{color:var(--green)}.engineering .lane-caption{color:var(--ochre)}
 .block{--page-ink:#172e40;--page-muted:#526b7a;position:absolute;left:0;top:0;width:1200px;height:675px;background:#fff;color:var(--page-ink);border:0;border-radius:0;padding:0;box-shadow:0 calc(6px * var(--density,1)) calc(16px * var(--density,1)) #263b4710;will-change:transform,opacity;cursor:default;overflow:clip}.block.transition-origin{outline:calc(3px * var(--density,1)) solid #b55232;outline-offset:calc(9px * var(--density,1))}.block.is-selected{box-shadow:0 calc(6px * var(--density,1)) calc(18px * var(--density,1)) #263b471c}.page-label{position:absolute;top:calc(35px * var(--density,1));left:calc(58px * var(--density,1));font-size:calc(21px * var(--density,1));line-height:1;letter-spacing:.05em;color:var(--page-muted)}.focus-block{position:absolute;right:calc(34px * var(--density,1));top:calc(24px * var(--density,1));z-index:4;padding:calc(9px * var(--density,1));background:transparent;border:0;border-radius:0;width:calc(44px * var(--density,1));height:calc(44px * var(--density,1));display:grid;place-items:center;color:var(--page-muted);opacity:.5}.focus-block:hover,.focus-block:focus-visible{opacity:1}.focus-block svg{width:calc(26px * var(--density,1));height:calc(26px * var(--density,1))}.card-content{overflow-anchor:none;position:absolute;left:0;top:calc(85px * var(--density,1));right:0;bottom:calc(84px * var(--density,1));overflow:auto;overscroll-behavior:contain;padding:0 calc(58px * var(--density,1))}.page-heading{font-family:"Songti SC","STSong","Noto Serif CJK SC",serif;font-size:calc(72px * var(--density,1));font-weight:600;line-height:1.16;letter-spacing:-.025em;margin:calc(9px * var(--density,1)) 0 calc(18px * var(--density,1));text-wrap:balance;position:relative;z-index:1}.takeaway{font-size:calc(27px * var(--density,1));line-height:1.6;color:var(--page-muted);margin:0;position:relative;z-index:1;max-width:35em}.page-visual{margin-top:calc(32px * var(--density,1));position:relative;z-index:1}.page-footer{position:absolute;left:calc(58px * var(--density,1));right:calc(42px * var(--density,1));bottom:calc(28px * var(--density,1));height:calc(32px * var(--density,1));display:flex;align-items:center;gap:calc(22px * var(--density,1));color:var(--page-muted)}.page-number{font-size:calc(18px * var(--density,1));letter-spacing:.08em;margin-right:auto}.page-footer button{background:none;border:0;border-bottom:calc(1px * var(--density,1)) solid currentColor;border-radius:0;padding:calc(4px * var(--density,1)) 0;display:inline-flex;gap:calc(10px * var(--density,1));align-items:center;font-size:calc(22px * var(--density,1));color:inherit;white-space:nowrap}.page-footer button:hover{color:var(--accent);background:none}.page-footer button[aria-expanded=true]{font-weight:650}.page-footer .tree-action{color:var(--page-ink)}.page-footer svg{width:calc(21px * var(--density,1));height:calc(21px * var(--density,1))}
 .source-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(32px * var(--density,1));margin-top:calc(32px * var(--density,1))}.source-columns section{padding-top:calc(16px * var(--density,1));border-top:calc(2px * var(--density,1)) solid #98acb9}.source-columns h3{font-size:calc(22px * var(--density,1));font-weight:550;margin:0 0 calc(16px * var(--density,1));color:#587181}.source-columns p{font-size:calc(28px * var(--density,1));line-height:1.55;margin:0;color:#243e50}.source-note{margin:calc(23px * var(--density,1)) 0 0;font-size:calc(20px * var(--density,1));color:#617888}.delivery-line{display:grid;grid-template-columns:1fr 1fr 1fr;gap:calc(25px * var(--density,1));margin-top:calc(35px * var(--density,1));border-top:calc(2px * var(--density,1)) solid #8aab97;padding-top:calc(24px * var(--density,1))}.delivery-line strong{display:block;font-size:calc(30px * var(--density,1));margin-bottom:calc(10px * var(--density,1))}.delivery-line span{font-size:calc(23px * var(--density,1));color:#536d5a;line-height:1.6}.block[data-id=output]{background:#f5f8f0;--page-ink:#243c2d;--page-muted:#56715d}
-.chapter{background:#fafbf8}.chapter-number{position:absolute;right:calc(38px * var(--density,1));top:0;font-size:calc(350px * var(--density,1));font-weight:650;line-height:1.1;letter-spacing:-.06em;color:#e7ebe0;pointer-events:none;font-variant-numeric:tabular-nums}.chapter .card-content{top:calc(113px * var(--density,1));bottom:calc(89px * var(--density,1));padding:calc(20px * var(--density,1)) calc(86px * var(--density,1));text-align:left}.chapter .page-heading{font-size:calc(95px * var(--density,1));line-height:1.15;margin:calc(20px * var(--density,1)) 0 calc(25px * var(--density,1));max-width:10em}.chapter .takeaway{font-size:calc(30px * var(--density,1));max-width:28em}.chapter-words{display:flex;gap:calc(26px * var(--density,1));align-items:center;font-size:calc(25px * var(--density,1));margin-top:calc(32px * var(--density,1));color:var(--page-muted)}.chapter-words b{font-weight:450}.chapter-words i{width:calc(50px * var(--density,1));height:calc(1px * var(--density,1));background:currentColor;opacity:.5}.chapter[data-id=decide]{background:#213b4e;--page-ink:#fffaf0;--page-muted:#c5d4db}.chapter[data-id=decide] .chapter-number{color:#304c5e}.chapter[data-id=decide] button:hover{color:#f0cba3}.chapter[data-id=verify]{background:#e8eef3;--page-ink:#213c50;--page-muted:#526d80}.chapter[data-id=verify] .chapter-number{color:#d3dee7}
+.chapter{background:#314b45;--page-ink:#fffaf0;--page-muted:#d1dfd9}.chapter-number{position:absolute;right:calc(38px * var(--density,1));top:0;font-size:calc(350px * var(--density,1));font-weight:650;line-height:1.1;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:calc(2px * var(--density,1)) #fffaf060;pointer-events:none;font-variant-numeric:tabular-nums}.chapter .card-content{top:calc(113px * var(--density,1));bottom:calc(89px * var(--density,1));padding:calc(20px * var(--density,1)) calc(86px * var(--density,1));text-align:left}.chapter .page-heading{font-size:calc(95px * var(--density,1));line-height:1.15;margin:calc(20px * var(--density,1)) 0 calc(25px * var(--density,1));max-width:10em}.chapter .takeaway{font-size:calc(30px * var(--density,1));max-width:28em}.chapter-words{display:flex;gap:calc(26px * var(--density,1));align-items:center;font-size:calc(25px * var(--density,1));margin-top:calc(32px * var(--density,1));color:var(--page-muted)}.chapter-words b{font-weight:450}.chapter-words i{width:calc(50px * var(--density,1));height:calc(1px * var(--density,1));background:currentColor;opacity:.5}.chapter[data-id=decide]{background:#213b4e;--page-ink:#fffaf0;--page-muted:#c5d4db}.chapter[data-id=decide] button:hover{color:#f0cba3}.chapter[data-id=verify]{background:#4a3857;--page-ink:#fffaf0;--page-muted:#e1d4e8}
 .perspective-page .page-heading{font-size:calc(77px * var(--density,1));max-width:12em}.perspective-page .takeaway{font-size:calc(26px * var(--density,1));max-width:32em}.perspective-page .page-visual{margin-top:calc(25px * var(--density,1))}.perspective-page[data-lane=data]{--page-ink:#204c68;--page-muted:#536f80}.perspective-page[data-lane=business]{--page-ink:#31523a;--page-muted:#5a725f}.perspective-page[data-lane=engineering]{--page-ink:#704922;--page-muted:#806749}.trace-line{display:flex;align-items:center;gap:calc(30px * var(--density,1));margin-top:calc(24px * var(--density,1));padding-top:calc(24px * var(--density,1));border-top:calc(1.5px * var(--density,1)) solid #abc2ce}.trace-line strong{font-size:calc(31px * var(--density,1));font-weight:550}.trace-line span{font-size:calc(23px * var(--density,1));color:var(--page-muted)}.trace-line svg{width:calc(65px * var(--density,1));height:calc(20px * var(--density,1));stroke:currentColor;fill:none;stroke-width:1.5;flex:none}.business-questions{margin:calc(24px * var(--density,1)) 0 0;display:grid;grid-template-columns:1fr 1fr;gap:calc(38px * var(--density,1));border-top:calc(1.5px * var(--density,1)) solid #afbfab;padding-top:calc(23px * var(--density,1))}.business-questions p{font-size:calc(31px * var(--density,1));line-height:1.4;margin:0}.business-questions small{display:block;font-size:calc(23px * var(--density,1));color:var(--page-muted);margin-top:calc(12px * var(--density,1))}.engineering-flow{display:flex;gap:calc(18px * var(--density,1));align-items:center;margin-top:calc(27px * var(--density,1));padding-top:calc(24px * var(--density,1));border-top:calc(1.5px * var(--density,1)) solid #c5b296}.engineering-flow span{font-size:calc(28px * var(--density,1))}.engineering-flow i{flex:1;height:calc(1px * var(--density,1));background:#ac906a}.example-quote{font-family:"Songti SC",serif;font-size:calc(43px * var(--density,1));line-height:1.5;margin:calc(25px * var(--density,1)) 0 0;border-left:0;padding:calc(20px * var(--density,1)) 0;border-top:calc(1px * var(--density,1)) solid #b5c6d1;border-bottom:calc(1px * var(--density,1)) solid #b5c6d1}
 .detail-text{position:relative;z-index:2;font-size:calc(28px * var(--density,1));line-height:1.65;background:transparent;padding:calc(26px * var(--density,1)) 0 calc(16px * var(--density,1));border-top:calc(1.5px * var(--density,1)) solid currentColor;margin-top:calc(28px * var(--density,1));user-select:text;color:var(--page-ink);text-align:left}.detail-text p{margin:0 0 calc(17px * var(--density,1))}.detail-text p:last-child{margin:0}.detail-open .page-visual{display:none}.detail-open .page-heading{font-size:calc(59px * var(--density,1))}.detail-open .takeaway{display:none}.detail-open.chapter .chapter-number{opacity:.3}.detail-open.chapter .card-content{top:calc(85px * var(--density,1));padding-top:0}.detail-open.chapter .page-heading{margin-top:calc(12px * var(--density,1));font-size:calc(61px * var(--density,1))}
 
@@ -48,7 +48,7 @@ const CanvasModel = (() => {
   const PAGE_H = 675;
   const PAGE_X = (CELL_W - PAGE_W) / 2;
   const PAGE_Y = (CELL_H - PAGE_H) / 2;
-  const centerCol = size => 1.5 - size / 2;
+  const centerCol = size => .5 - size / 2;
 
   const parents = {prepare:'input',decide:'input',verify:'input',data:'decide',business:'decide',engineering:'decide',sample:'data'};
   function survivingParent(id, scene) {
@@ -105,27 +105,26 @@ const CanvasModel = (() => {
   }
 
   function layout({ steps = false, perspectives = false, evidence = false } = {}) {
-    const nodes = [{ id: 'input', col: 1, row: 0 }];
+    const nodes = [{ id: 'input', col: 0, row: 0 }];
     const edges = [];
     if (!steps) {
-      nodes.push({ id: 'output', col: 1, row: 1 });
+      nodes.push({ id: 'output', col: 0, row: 1 });
       edges.push({ from: 'input', to: 'output', kind: 'main' });
     } else {
-      nodes.push({ id: 'prepare', col: 1, row: 1 }, { id: 'decide', col: 1, row: 2 });
+      nodes.push({ id: 'prepare', col: 0, row: 1 }, { id: 'decide', col: 0, row: 2 });
       let nextRow = 3;
       if (perspectives) {
         ['data', 'business', 'engineering'].forEach((id, col) => {
-          nodes.push({ id, col, row: 3, lane: id });
+          nodes.push({ id, col: col + 1, row: 2, lane: id });
           edges.push({ from: 'decide', to: id, kind: 'perspective' });
         });
-        nextRow += 1;
         if (evidence) {
-          nodes.push({ id: 'sample', col: 0, row: 4, lane: 'data' });
+          nodes.push({ id: 'sample', col: 1, row: 3, lane: 'data' });
           edges.push({ from: 'data', to: 'sample', kind: 'detail' });
           nextRow += 1;
         }
       }
-      nodes.push({ id: 'verify', col: 1, row: nextRow }, { id: 'output', col: 1, row: nextRow + 1 });
+      nodes.push({ id: 'verify', col: 0, row: nextRow }, { id: 'output', col: 0, row: nextRow + 1 });
       const main = ['input', 'prepare', 'decide', 'verify', 'output'];
       main.slice(1).forEach((id, index) => edges.push({ from: main[index], to: id, kind: 'main' }));
     }
@@ -141,7 +140,7 @@ const CanvasModel = (() => {
   function clampView({ col, row, size }, scene) {
     if (![1, 2, 3].includes(size)) throw new RangeError('View size must be 1, 2, or 3.');
     return {
-      col: scene.hasBranches ? Math.max(.5 - size / 2, Math.min(col, 2.5 - size / 2)) : centerCol(size),
+      col: scene.hasBranches ? Math.max(.5 - size / 2, Math.min(col, scene.maxCol + .5 - size / 2)) : centerCol(size),
       row: Math.max(0, Math.min(row, Math.max(0, scene.maxRow - size + 1))),
       size,
     };
@@ -150,8 +149,7 @@ const CanvasModel = (() => {
   function viewForNode(id, size, scene, current) {
     const node = scene.nodes.find(candidate => candidate.id === id);
     if (!node) throw new Error(`Unknown node: ${id}`);
-    let col = centerCol(size);
-    if (node.lane) col = size === 1 ? node.col : size === 2 ? (node.col === 0 ? 0 : node.col === 2 ? 1 : .5) : 0;
+    const col = node.col + .5 - size / 2;
     const view = clampView({ col, row: Math.round(current?.row ?? node.row), size }, scene);
     if (node.row < view.row) view.row = node.row;
     else if (node.row + 1 > view.row + size) view.row = node.row - size + 1;
@@ -160,7 +158,9 @@ const CanvasModel = (() => {
 
   function horizontalStops(view, scene) {
     const hasVisibleBranches = scene.nodes.some(node => node.lane && node.row >= view.row && node.row < view.row + view.size);
-    return hasVisibleBranches ? view.size === 1 ? [0, 1, 2] : view.size === 2 ? [-.5, 0, .5, 1, 1.5] : [-1, 0, 1] : [centerCol(view.size)];
+    if (!hasVisibleBranches) return [centerCol(view.size)];
+    const step = view.size === 2 ? .5 : 1;
+    return Array.from({length: scene.maxCol / step + 1}, (_, i) => centerCol(view.size) + i * step);
   }
 
   function snapView({ col, row, size }, scene) {
@@ -224,11 +224,11 @@ slideContent.data.visual += `<div class="reading-article">
 <section><h3>05 / 交给下一个视角的是什么？</h3><p>交付一份可追溯的问题描述：受阻的任务是什么、哪些记录支持它、重复项如何处理、哪些判断仍待核实。</p><p>业务视角可以据此讨论影响与优先级；AI 工程视角可以据此设计来源校验和人工复核。这里的输出，正是下一步的输入。</p><p class="reading-end">本页读完了。松手后再向下滑动，继续到下一个节点；也可以用方向键切换视角。</p></section>
 </div>`;
 Object.entries(slideContent).forEach(([id,content])=>Object.assign(cards[id],content));
-let state={steps:false,perspectives:false,evidence:false,summary:false,selected:'input',route:'start',view:{col:.5,row:0,size:2}}, scene=CanvasModel.layout(state);
+let state={steps:false,perspectives:false,evidence:false,summary:false,selected:'input',route:'start',view:{col:-.5,row:0,size:2}}, scene=CanvasModel.layout(state);
 const readingPositions=new Map(),expectedScroll=new WeakMap();
 const elements=new Map(),positions=new Map(),detailOpen=new Set(),media=matchMedia('(prefers-reduced-motion: reduce)');
 let cameraMotion=null,layoutMotion=null,transitionOrigin=null;
-let reduced=media.matches,frame=0,stageWidth=900,stageHeight=560,camera={x:W*.5,y:0,size:2},drag=null,detailDrag=null,suppressClick=false,wheelTimer=0,wheelBase=null,toastTimer=0,pinch=null,pinchTimer=0,nativePinch=false,readingGesture=null;
+let reduced=media.matches,frame=0,stageWidth=900,stageHeight=560,camera={x:-W*.5,y:0,size:2},drag=null,detailDrag=null,suppressClick=false,wheelTimer=0,wheelBase=null,toastTimer=0,pinch=null,pinchTimer=0,nativePinch=false,readingGesture=null;
 function say(message){$('announcement').textContent=message;}
 function toast(message){clearTimeout(toastTimer);$('toast').textContent=message;$('toast').hidden=false;toastTimer=setTimeout(()=>$('toast').hidden=true,2600);}
 function createBlock(node){const c=cards[node.id],el=document.createElement('article');el.className='block'+(c.chapter?' chapter':'')+(node.lane?' perspective-page':'');el.dataset.id=node.id;el.setAttribute('aria-labelledby',`title-${node.id}`);if(node.lane)el.dataset.lane=node.lane;
@@ -251,9 +251,9 @@ function renderStructure(previous=scene){
   // Retain old edges and bands until their pages reach the parent.
   const edges=new Map([...previous.edges,...scene.edges].map(e=>[e.from+'>'+e.to,e]));
   $('edges').innerHTML=[...edges.values()].map(e=>`<path class="edge ${e.kind}${e.from===transitionOrigin?' transition-link':''}" data-from="${e.from}" data-to="${e.to}" marker-end="url(#arrow)"/>`).join('');
-  if(state.perspectives||previous.hasBranches)$('bands').innerHTML=['data','business','engineering'].map((id,i)=>`<div class="lane-band ${id}" data-lane="${id}" style="left:${i*W}px;top:${3*H}px;height:${(state.evidence||previous.nodes.some(n=>n.id==='sample')?2:1)*H}px"><span class="lane-caption">${cards[id].role}</span></div>`).join('');
+  if(state.perspectives||previous.hasBranches)$('bands').innerHTML=['data','business','engineering'].map((id,i)=>`<div class="lane-band ${id}" data-lane="${id}" style="left:${(i+1)*W}px;top:${2*H}px;height:${(state.evidence||previous.nodes.some(n=>n.id==='sample')?2:1)*H}px"><span class="lane-caption">${cards[id].role}</span></div>`).join('');
   else $('bands').innerHTML='';
-  $('connections').setAttribute('width',3*W);$('connections').setAttribute('height',(Math.max(previous.maxRow,scene.maxRow)+1)*H);
+  $('connections').setAttribute('width',(Math.max(previous.maxCol,scene.maxCol)+1)*W);$('connections').setAttribute('height',(Math.max(previous.maxRow,scene.maxRow)+1)*H);
   buildNavigation();
 }
 function buildNavigation(){
@@ -267,8 +267,8 @@ function draw(){const {scale,cellHeight,pageHeight,x,y}=CanvasModel.projection(s
   const live=new Set(scene.nodes.map(n=>n.id));
   positions.forEach((p,id)=>{const el=elements.get(id);el.style.height=pageHeight+'px';el.style.setProperty('--density',Math.min(1,pageHeight/PAGE_H));el.style.transformOrigin='center';el.style.transform=`translate(${p.x+PAGE_X}px,${p.y/H*cellHeight+PAGE_Y}px) scale(${p.scale??1})`;el.style.opacity=p.opacity;el.hidden=p.opacity<=.001&&!live.has(id);});
   elements.forEach(restoreReading);
-  $('edges').querySelectorAll('path').forEach(path=>{const a=positions.get(path.dataset.from),b=positions.get(path.dataset.to);if(!a||!b)return;const x1=a.x+W/2,y1=a.y/H*cellHeight+cellHeight/2+pageHeight/2*(a.scale??1),x2=b.x+W/2,y2=b.y/H*cellHeight+cellHeight/2-pageHeight/2*(b.scale??1),mid=y1+(y2-y1)/2;path.setAttribute('d',`M${x1} ${y1} V${mid} H${x2} V${y2}`);path.style.opacity=Math.min(a.opacity,b.opacity);});
-  document.querySelectorAll('.lane-band').forEach(el=>{const p=positions.get(el.dataset.lane);el.style.opacity=p?.opacity??0;el.style.top=3*cellHeight+'px';el.style.height=(state.evidence||layoutMotion?.removed.has('sample')?2:1)*cellHeight+'px';});
+  $('edges').querySelectorAll('path').forEach(path=>{const a=positions.get(path.dataset.from),b=positions.get(path.dataset.to);if(!a||!b)return;const x1=a.x+W/2,y1=a.y/H*cellHeight+cellHeight/2+pageHeight/2*(a.scale??1),x2=b.x+W/2,y2=b.y/H*cellHeight+cellHeight/2-pageHeight/2*(b.scale??1),mid=y1+(y2-y1)/2;if(path.classList.contains('perspective')){const right=a.x+W/2+PAGE_W/2*(a.scale??1),center=a.y/H*cellHeight+cellHeight/2,rail=Math.min(a.y,b.y)/H*cellHeight-12;path.setAttribute('d',`M${right} ${center} H${right+PAGE_X/2} V${rail} H${x2} V${y2}`);}else path.setAttribute('d',`M${x1} ${y1} V${mid} H${x2} V${y2}`);path.style.opacity=Math.min(a.opacity,b.opacity);});
+  document.querySelectorAll('.lane-band').forEach(el=>{const p=positions.get(el.dataset.lane);el.style.opacity=p?.opacity??0;el.style.left=(p?.x??0)+'px';el.style.top=(p?.y??2*H)/H*cellHeight+'px';el.style.height=(state.evidence||layoutMotion?.removed.has('sample')?2:1)*cellHeight+'px';});
 }
 function visibleNodes(){const r=$('stage').getBoundingClientRect();return scene.nodes.filter(n=>{const p=elements.get(n.id).getBoundingClientRect();return p.right>r.left&&p.left<r.right&&p.bottom>r.top&&p.top<r.bottom;});}
 function updateControls(moving=!!(cameraMotion||layoutMotion||pinch)){
@@ -316,7 +316,7 @@ function pan(dc,dr){cancelGesture();state.view=CanvasModel.nextView(state.view,d
 function transitionTo(previous,origin,opening){
   transitionOrigin=origin;renderStructure(previous);
   const n=scene.nodes.find(n=>n.id===origin),old=previous.nodes.find(n=>n.id===origin),size=Math.max(state.view.size,origin==='input'||origin==='decide'?3:2);
-  state.view=CanvasModel.clampView({col:CanvasModel.centerCol(size),row:Math.min(n?.row??0,old?.row??0),size},scene);
+  state.view=CanvasModel.clampView({col:opening?(n?.col??0):CanvasModel.centerCol(size),row:Math.min(n?.row??0,old?.row??0),size},scene);
   animateStructure(previous,origin,opening);
 }
 function toggleTree(kind){cancelGesture();const previous=scene,opening=!state[kind],origin={steps:'input',perspectives:'decide',evidence:'data'}[kind];state[kind]=opening;state.summary=false;
@@ -328,8 +328,8 @@ function toggleTree(kind){cancelGesture();const previous=scene,opening=!state[ki
 function summarize(){
   cancelGesture();const previous=scene,changed=state.perspectives;
   state.summary=true;state.perspectives=false;state.evidence=false;state.selected='decide';state.route='summary';
-  if(changed){transitionTo(previous,'decide',false);layoutMotion.endView={col:0,row:1,size:3};}
-  else{renderStructure(previous);state.view={col:0,row:1,size:3};animate();}
+  if(changed){transitionTo(previous,'decide',false);layoutMotion.endView={col:CanvasModel.centerCol(3),row:1,size:3};}
+  else{renderStructure(previous);state.view={col:CanvasModel.centerCol(3),row:1,size:3};animate();}
   say('收纳到核心步骤，回顾阻塞与解决办法');
 }
 function toggleDetail(id){const el=elements.get(id),body=el.querySelector('.detail-text'),button=el.querySelector('[data-detail]'),open=!detailOpen.has(id);rememberReading(el);open?detailOpen.add(id):detailOpen.delete(id);body.hidden=!open;el.classList.toggle('detail-open',open);el.querySelector('.card-content').tabIndex=open?0:-1;button.setAttribute('aria-expanded',String(open));button.querySelector('span').textContent=open?'收起说明':'查看说明';state.selected=id;updateControls();restoreReading(el);say(`${cards[id].title}的说明已${open?'展开':'收起'}，节点数量不变`);}
