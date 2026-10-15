@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "version": "0.7.2",
-  "status": "PREPUBLICATION_VERIFIED",
+  "status": "PUBLISHED",
   "scope": "Leftmost chapter column with rightward content layout; retain 0.7.1 visual selection",
   "notVerified": [
     "Physical trackpad",
@@ -21,11 +21,26 @@
     "browserNestedCollapse": "PASS",
     "browserConsoleErrors": 0,
     "localInstalledFiles": 191,
-    "localInstalledByteEquality": "PASS"
+    "localInstalledByteEquality": "PASS",
+    "publicDownloadChecksum": "PASS",
+    "publicArchiveTagEquality": "PASS",
+    "downloadedBuilder": "PASS",
+    "gitMarketplaceInstall": "PASS",
+    "installedReleaseByteEquality": "PASS",
+    "bilingualReadmeNavigation": "PASS",
+    "publicReleaseRendered": "PASS"
   },
   "layoutDetector": {
     "status": "REVIEWED_WARNING",
     "finding": "monotonous-spacing: 8px used in 9/12 detected values",
     "disposition": "Existing compact navigation/control spacing is unchanged; chapter/content separation uses the deliberate 1280x800 canvas grid. No blanket restyling for this warning."
-  }
+  },
+  "sha256": "00f5f7b37d32f46ba66180f7d838cc6744125af69c558e992e3033a43bb633e3",
+  "archiveFiles": 234,
+  "archiveBytes": 1724612,
+  "commit": "8ea844c0b29db0b25131cde0a06217c56546fa23",
+  "tag": "v0.7.2",
+  "release": "https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2",
+  "publishedAt": "2026-10-15T09:16:08Z",
+  "browserNote": "Chinese README initially showed GitHub Error loading page; reloading succeeded. Public asset bytes were verified by actual download."
 }

@@ -1,9 +1,9 @@
 # Current state
 
-## 0.7.2 candidate · 2026-10-15
+## 0.7.2 published · 2026-10-15
 
 - Chapter titles share the leftmost column; content and parallel perspectives unfold to their right. The model, bounds, snap stops, connectors and perspective bands follow the new positions. Focus still fills the stage and zoom follows the current node.
-- Retains 0.7.1 Impeccable visual selection. Existing narrative and reading/disclosure semantics remain intact. [Validation](project-support/release-verification-0.7.2.json). Package checks, 20 Python tests, model assertions and skill validation pass. Browser checks at 1280×720 confirm rightward layout, outer-node full-stage focus, long-page scroll/bookmark restoration and nested collapse; no console errors observed. Local 0.7.2 installation matches 191 files. Publication pending.
+- Retains 0.7.1 Impeccable visual selection. Existing narrative and reading/disclosure semantics remain intact. [Validation](project-support/release-verification-0.7.2.json). Package checks, 20 Python tests, model assertions and skill validation pass. Browser checks at 1280×720 confirm rightward layout, outer-node full-stage focus, long-page scroll/bookmark restoration and nested collapse; no console errors observed. Local 0.7.2 installation matches 191 files. Published [v0.7.2](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2) at `8ea844c0b29db0b25131cde0a06217c56546fa23`. Public ZIP checksum and all 234 tagged files match; extracted builder and installed GitHub-tag source verify. Physical trackpad, file://, cross-platform and fresh-chat full visual choice remain unverified.
 
 ## 0.7.1 published · 2026-10-15
 
