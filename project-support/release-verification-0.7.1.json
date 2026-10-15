@@ -1,7 +1,7 @@
 {
   "date": "2026-10-15",
   "version": "0.7.1",
-  "status": "PREPUBLICATION_VERIFIED",
+  "status": "PUBLISHED",
   "scope": "Impeccable visual ownership and real-page choice workflow; no canvas runtime or upstream helper changes",
   "checks": {
     "package": "PASS",
@@ -13,10 +13,27 @@
     "skillEntries": 12,
     "upstreamHelpersAndCanvasRuntimeUnchanged": "PASS",
     "publicDiffScope": "PASS",
-    "documentContractReview": "PASS"
+    "documentContractReview": "PASS",
+    "publicDownloadChecksum": "PASS",
+    "publicArchiveTagEquality": "PASS",
+    "downloadedPackageCheck": "PASS",
+    "downloadedBuilderReproducesExample": "PASS",
+    "gitMarketplacePinnedInstall": "PASS",
+    "installedAndEnabled": true,
+    "installedReleaseByteEquality": "PASS",
+    "bilingualNavigationAndDownloadTargets": "PASS",
+    "publicReleaseRendered": "PASS"
   },
   "notVerified": [
     "Fresh-chat creation through user choice and full styling",
     "Physical trackpad, file://, cross-platform runtime"
-  ]
+  ],
+  "sha256": "3127b0f464a7344c40540819a5c25fc3b0d86df6b8f380a139a540fdfdfef03d",
+  "archiveFiles": 233,
+  "archiveBytes": 1722116,
+  "tag": "v0.7.1",
+  "commit": "282fe0a49a843111c5dfe7fab221c44616157c03",
+  "publishedAt": "2026-10-15T09:02:25Z",
+  "release": "https://github.com/thejaytang/html-briefing/releases/tag/v0.7.1",
+  "browserNote": "Initial navigation timed out but the created tab subsequently loaded. Release asset list remained at Loading; actual downloads and GitHub API confirmed the assets."
 }
