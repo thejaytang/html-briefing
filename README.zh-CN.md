@@ -11,9 +11,9 @@
 
 **一个入口，保留已有技能，交付可查看、可操作的解释。**
 
-**0.7.2 版本：** 字体、字号层级与配色由 Impeccable 负责。每次新创作先提供 2–3 套实际页面方案，选定后再应用到全篇。章节页保留大背景色、浅色文字和镂空数字；章节标题组成最左侧纵列，所属内容向右展开；缩放锚点、展开状态和阅读位置仍独立保留。
+**0.7.3 版本：** 字体、字号层级与配色由 Impeccable 负责。每次新创作先提供 2–3 套实际页面方案，选定后再应用到全篇。章节页保留大背景色、浅色文字和镂空数字；章节标题组成最左侧纵列，所属内容向右展开；缩放锚点、展开状态和阅读位置仍独立保留。双击概览中页面的正文或背景即可进入单页聚焦；按钮保持原有操作，已聚焦时双击不重置阅读位置。
 
-[安装](#1-安装) · [试用请求](#3-使用) · [下载 0.7.2 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip) · [版本说明](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2) · [能力映射](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
+[安装](#1-安装) · [试用请求](#3-使用) · [下载 0.7.3 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) · [版本说明](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) · [能力映射](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
 
 包内提供可移植的根级 `plugin.json`，并保留受支持的 Codex 兼容清单；这不等于已经验证跨宿主运行。正式标识符为 `html-briefing`，旧名为 `html-brifing`。仓库、插件市场和主技能均使用修正后的名称。这是技能编排插件，不是幻灯片编辑器或自动依赖管理器。
 
@@ -24,11 +24,11 @@
 从 GitHub 安装固定版本：
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.2
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.3
 codex plugin add html-briefing@html-briefing
 ```
 
-也可以下载 [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip) 和 [SHA-256 校验文件](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip.sha256)，核对摘要后，在解压出的 `html-briefing-0.7.2` 目录中运行：
+也可以下载 [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) 和 [SHA-256 校验文件](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip.sha256)，核对摘要后，在解压出的 `html-briefing-0.7.3` 目录中运行：
 
 ```sh
 codex plugin marketplace add .
@@ -140,7 +140,7 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-包检查器与 Python 测试使用 Python 3.10+ 标准库；画布模型检查另需 Node.js。生成的 HTML 不依赖外部运行库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/release-verification-0.7.2.json)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
+包检查器与 Python 测试使用 Python 3.10+ 标准库；画布模型检查另需 Node.js。生成的 HTML 不依赖外部运行库。可选锁定文件仅保留官方技能元数据验证器所需的 PyYAML。结构检查不代表浏览器行为通过。贡献前阅读 [AGENTS.md](AGENTS.md)、[当前状态](PROJECT_STATE.md)与[发布验证记录](project-support/release-verification-0.7.3.json)。问题复现说明应包含场景、状态、窗口尺寸与输入，不包含私人材料。
 
 [来源与可选上游](plugins/html-briefing/skills/html-briefing/references/sources.md)区分借鉴来源、推荐技能和宿主文档。再分发的技能保留上游许可与署名；移出的技能套件也不列为补装建议。
 

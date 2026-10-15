@@ -32,6 +32,9 @@ class CanvasBuilder(unittest.TestCase):
         script.write_text('\n'.join(re.findall(r'<script>(.*?)</script>', html, re.S)))
         subprocess.run(['node', '--check', str(script)], check=True, capture_output=True)
 
+    def test_double_click_focus(self):
+        subprocess.run(['node', str(ROOT / 'tests/canvas-double-click.test.cjs')], check=True, capture_output=True)
+
     def test_existing_output_is_preserved(self):
         self.output.write_text('User work')
         with self.assertRaises(FileExistsError):

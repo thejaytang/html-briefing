@@ -26,12 +26,15 @@ Main-only views may center the chapter being read. During expansion, show the ow
 | 1 / 4 / 9, plus / minus | Keyboard zoom fallback, with the same centered-node anchor |
 | In-content detail trigger | Open/close an explanation inside that node; no graph change |
 | In-content branch trigger | Add/fold owned nodes; visually trace them to their parent |
+| Double-click a page’s text or background in overview | Focus that page alone; preserve expansion, disclosures and reading bookmarks |
 | In-content focus trigger | Show that node alone, filling the stage |
 | Key-node navigation | Focus an already available key node; no implicit expansion/collapse |
 
 The capacities describe the view scale, not an exact visible-node count. Partially visible neighboring pages are useful context. Allow enough outer camera space to center the leftmost/rightmost node at every capacity. Do not hide nodes simply because only part of them is visible.
 
 ## Focus and long-form reading
+
+Double-clicking an overview page uses the same focus path as its focus button. Ignore clicks on interactive controls and on hidden/inert nodes. In single-node focus, leave double-click behavior alone so text selection and reading position remain intact.
 
 Single-node focus fills the available stage. Adapt the layout without stretching glyphs. Long content scrolls vertically inside the focused page before the canvas moves. At a content edge, consume the remainder of the same gesture; only a fresh outward gesture after release moves one adjacent node. Hold subsequent momentum to avoid skipping nodes. Reverse input can immediately read back inward. A page without overflow can navigate directly.
 
@@ -70,7 +73,7 @@ Reuse projection, zoom-anchor, snap and reading-gesture behavior with the packag
 Test actual final files, not just model output:
 
 1. Check that every chapter is in the leftmost column and owned pages unfold to its right without displacing it into the middle. Open branches and local explanations; switch 1→4→9→1. The same content remains open.
-2. Center each outer node and zoom to focus. Its identity stays centered; partial neighbors remain visible in overview.
+2. Double-click an overview page, including a rightmost branch, to enter full-stage focus; controls retain their actions and repeated double-clicks in focus preserve reading position. Center each outer node and zoom to focus. Its identity stays centered; partial neighbors remain visible in overview.
 3. Expand and collapse a nested branch. Its parent remains understandable; keyboard focus moves to a surviving owner if needed.
 4. Read a long node at top, middle and bottom. Same-gesture edge inertia holds; a new outward gesture moves one node. Reverse scroll reads inward.
 5. Exit focus: overview scroll is zero. Re-enter: the saved reading position returns. Repeat after detail changes, resize and fullscreen.

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "version": "0.7.3",
+  "status": "READY_FOR_RELEASE",
+  "scope": "Double-click overview pages to enter single-page focus",
+  "checks": {
+    "canvasModel": "PASS",
+    "leadSkillMetadata": "PASS",
+    "doubleClickGuards": "PASS",
+    "package": "PASS",
+    "pythonTests": 21,
+    "browserDoubleClickFocus": "PASS: overview to full 1280x720 stage",
+    "browserConsoleErrors": 0
+  },
+  "initialFailure": "Package link check and two tests failed before the new verification record existed; resolved by adding this record.",
+  "notVerified": [
+    "Physical trackpad",
+    "file:// runtime",
+    "Cross-platform runtime",
+    "Fresh-chat dispatch"
+  ]
+}

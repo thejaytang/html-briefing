@@ -1,15 +1,15 @@
 # Installation and maintenance
 
-The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.2` release.
+The canonical plugin, marketplace and lead-skill identifier is `html-briefing`. The former spelling was `html-brifing`. The GitHub repository is `thejaytang/html-briefing`; install the pinned `v0.7.3` release.
 
 ## Install from GitHub
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.2
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.3
 codex plugin add html-briefing@html-briefing
 ```
 
-The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
+The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
 
 ## Local installation and name migration
 
@@ -23,6 +23,6 @@ Do not change old release archives, tags or evidence records. Older links and ta
 
 The maintained entrypoint is `plugins/html-briefing/skills/html-briefing/SKILL.md`. Its flow-canvas reference routes to the editable template, geometry/gesture model and builder. Adapt project copies, not the installed cache. The original fictional case is an example, not required business content.
 
-Run `python3 scripts/check_package.py`, `python3 -m unittest discover -s tests`, and `node tests/canvas-model.test.cjs`. Build the example with the skill's `scripts/build_flow_canvas.py`. Inspect the extracted final HTML in the intended browser and offline. Structural checks do not establish browser behavior, physical trackpad acceptance, cross-platform support or fresh-chat dispatch.
+Run `python3 scripts/check_package.py`, `python3 -m unittest discover -s tests`, `node tests/canvas-model.test.cjs`, and `node tests/canvas-double-click.test.cjs`. Build the example with the skill's `scripts/build_flow_canvas.py`. Inspect the extracted final HTML in the intended browser and offline. Structural checks do not establish browser behavior, physical trackpad acceptance, cross-platform support or fresh-chat dispatch.
 
 The bundle remains one storytelling lead plus eleven helpers (12 entries total). Select helpers by need and preserve explicitly chosen equivalents. Keep all upstream notices and per-file hashes in `bundle.json`; ordinary canvas work does not alter imported helper snapshots. Visualize and Sites remain host-provided capabilities. ImageGen uses the Codex system skill. Runtime tools and any service access are separate from skill installation.

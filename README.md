@@ -11,9 +11,9 @@ Turn project materials into an evidence-led HTML briefing with storytelling at i
 
 **One entrypoint. Keep your existing skills. Deliver an explanation people can inspect.**
 
-**Version 0.7.2:** Impeccable now owns fonts, type scale and palette. For each new briefing, preview 2–3 actual-page directions and choose before the full presentation is styled. Chapter pages retain large color fields, light text and outline numerals. Chapter titles now form the leftmost vertical column, with each chapter’s content expanding to the right. Zoom anchors, disclosure and reading bookmarks remain independent.
+**Version 0.7.3:** Double-click a page’s text or background in overview to enter full-stage focus. Buttons retain their own actions, and double-clicking an already focused page preserves its reading position. Impeccable now owns fonts, type scale and palette. For each new briefing, preview 2–3 actual-page directions and choose before the full presentation is styled. Chapter pages retain large color fields, light text and outline numerals. Chapter titles now form the leftmost vertical column, with each chapter’s content expanding to the right. Zoom anchors, disclosure and reading bookmarks remain independent.
 
-[Install](#1-install) · [Try a request](#3-use-it) · [Download 0.7.2 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip) · [Release notes](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.2) · [Capability map](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
+[Install](#1-install) · [Try a request](#3-use-it) · [Download 0.7.3 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) · [Release notes](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.3) · [Capability map](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
 
 The package has a portable root `plugin.json` and retains the supported Codex compatibility manifest. This format choice does not establish cross-host runtime compatibility. The canonical identifier is `html-briefing` (formerly `html-brifing`). The repository, marketplace and lead skill use the corrected name. This is a skill orchestration plugin, not a slide editor or an automatic dependency manager.
 
@@ -24,11 +24,11 @@ Requires a Codex host with plugin support, file access and an authorized project
 Install the pinned release from GitHub:
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.2
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.3
 codex plugin add html-briefing@html-briefing
 ```
 
-Alternatively, download the [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip) and [SHA-256 checksum](https://github.com/thejaytang/html-briefing/releases/download/v0.7.2/html-briefing-0.7.2.zip.sha256), verify the digest, then enter the extracted `html-briefing-0.7.2` directory:
+Alternatively, download the [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip) and [SHA-256 checksum](https://github.com/thejaytang/html-briefing/releases/download/v0.7.3/html-briefing-0.7.3.zip.sha256), verify the digest, then enter the extracted `html-briefing-0.7.3` directory:
 
 ```sh
 codex plugin marketplace add .
@@ -140,7 +140,7 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/release-verification-0.7.2.json) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
+The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/release-verification-0.7.3.json) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
 
 [Sources and optional upstreams](plugins/html-briefing/skills/html-briefing/references/sources.md) distinguish inspiration, recommended helpers and host documentation. Redistributed skills retain upstream licenses and credits; omitted suites are not installation recommendations.
 

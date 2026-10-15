@@ -191,6 +191,12 @@ function summarize(){
 }
 function toggleDetail(id){const el=elements.get(id),body=el.querySelector('.detail-text'),button=el.querySelector('[data-detail]'),open=!detailOpen.has(id);rememberReading(el);open?detailOpen.add(id):detailOpen.delete(id);body.hidden=!open;el.classList.toggle('detail-open',open);el.querySelector('.card-content').tabIndex=open?0:-1;button.setAttribute('aria-expanded',String(open));button.querySelector('span').textContent=open?'收起说明':'查看说明';state.selected=id;updateControls();restoreReading(el);say(`${cards[id].title}的说明已${open?'展开':'收起'}，节点数量不变`);}
 document.addEventListener('click',event=>{if(suppressClick){suppressClick=false;return;}const b=event.target.closest('button');if(!b)return;if(b.dataset.focus)focusNode(b.dataset.focus);else if(b.dataset.detail)toggleDetail(b.dataset.detail);else if(b.dataset.tree)toggleTree(b.dataset.tree);else if(b.hasAttribute('data-summary'))summarize();else if(b.dataset.node){focusNode(b.dataset.node);$('viewport').focus({preventScroll:true});}});
+$('blocks').addEventListener('dblclick',event=>{
+  if(state.view.size===1||event.target.closest('button,a,input,textarea,select,[contenteditable]'))return;
+  const block=event.target.closest('.block');
+  if(!block||block.inert||block.hidden)return;
+  event.preventDefault();focusNode(block.dataset.id);$('viewport').focus({preventScroll:true});
+});
 $('nav-shell').addEventListener('pointerleave',()=>{const active=document.activeElement;if($('nav-shell').contains(active)&&!active.matches(':focus-visible'))$('viewport').focus({preventScroll:true});});
 $('language').onclick=()=>{toast('当前演示仅提供中文。');$('viewport').focus({preventScroll:true});};
 media.addEventListener('change',e=>{reduced=e.matches;});

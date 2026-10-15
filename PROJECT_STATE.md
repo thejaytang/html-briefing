@@ -1,5 +1,10 @@
 # Current state
 
+## 0.7.3 release preparation · 2026-10-15
+
+- Double-click an overview page to enter single-page focus through the existing focus handler. Controls, hidden nodes and already-focused pages are excluded; chapter layout, disclosure and reading bookmarks are unchanged.
+- Updated bilingual usage/install links, lead guidance, template, built example and focused regression checks. Package checks, 21 Python tests (including double-click guards), model assertions and lead-skill validation pass. The packaged example fills the 1280×720 stage after double-click; no console errors observed. [Evidence](project-support/release-verification-0.7.3.json). Release/download/install verification is pending.
+
 ## 0.7.2 published · 2026-10-15
 
 - Chapter titles share the leftmost column; content and parallel perspectives unfold to their right. The model, bounds, snap stops, connectors and perspective bands follow the new positions. Focus still fills the stage and zoom follows the current node.
