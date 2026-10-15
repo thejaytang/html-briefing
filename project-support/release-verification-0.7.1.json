@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "version": "0.7.1",
+  "status": "PREPUBLICATION_VERIFIED",
+  "scope": "Impeccable visual ownership and real-page choice workflow; no canvas runtime or upstream helper changes",
+  "checks": {
+    "package": "PASS",
+    "pythonTests": 20,
+    "canvasModel": "PASS",
+    "leadSkillMetadata": "PASS",
+    "installedLocalByteEquality": "PASS",
+    "installedFiles": 191,
+    "skillEntries": 12,
+    "upstreamHelpersAndCanvasRuntimeUnchanged": "PASS",
+    "publicDiffScope": "PASS",
+    "documentContractReview": "PASS"
+  },
+  "notVerified": [
+    "Fresh-chat creation through user choice and full styling",
+    "Physical trackpad, file://, cross-platform runtime"
+  ]
+}

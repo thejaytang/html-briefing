@@ -20,6 +20,8 @@ Inspect reference images before adopting composition or assets. Cropped and anno
 
 ## Coherent visual design
 
+For new briefings, complete [visual direction and user selection](visual-direction.md) before styling the whole artifact. Impeccable owns typography and color; preserve the chosen chapter identity.
+
 Derive style from the audience, content and brand. Define shared typography, spacing, semantic colors, icon sizes, focus/selection states and motion timing in the project's existing style source. Use hierarchy, contrast and precise alignment; projected technical labels must remain readable. A representative scene includes actual content and an interaction, not only a palette or decorative cover.
 
 One main theme and visual guide attention. Keep navigation coherent; a chapter sidebar is one option for a long live briefing, not a universal rule. Avoid duplicate progress systems. Small inline SVG icons have their own size constraints.

@@ -11,9 +11,9 @@ Turn project materials into an evidence-led HTML briefing with storytelling at i
 
 **One entrypoint. Keep your existing skills. Deliver an explanation people can inspect.**
 
-**Version 0.7.0:** the plugin is now `html-briefing`, with flow canvas as the default for new presentations. It includes an editable starter, a self-contained example and regression checks. Existing pane, language and Sites guidance is retained; glass transitions remain optional.
+**Version 0.7.1:** Impeccable now owns fonts, type scale and palette. For each new briefing, preview 2–3 actual-page directions and choose before the full presentation is styled. Chapter pages retain large color fields, light text and outline numerals. Flow-canvas behavior is unchanged.
 
-[Install](#1-install) · [Try a request](#3-use-it) · [Download 0.7.0 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.0/html-briefing-0.7.0.zip) · [Release notes](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.0) · [Capability map](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
+[Install](#1-install) · [Try a request](#3-use-it) · [Download 0.7.1 ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.1/html-briefing-0.7.1.zip) · [Release notes](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.1) · [Capability map](plugins/html-briefing/skills/html-briefing/references/capabilities.md)
 
 The package has a portable root `plugin.json` and retains the supported Codex compatibility manifest. This format choice does not establish cross-host runtime compatibility. The canonical identifier is `html-briefing` (formerly `html-brifing`). The repository, marketplace and lead skill use the corrected name. This is a skill orchestration plugin, not a slide editor or an automatic dependency manager.
 
@@ -24,11 +24,11 @@ Requires a Codex host with plugin support, file access and an authorized project
 Install the pinned release from GitHub:
 
 ```sh
-codex plugin marketplace add thejaytang/html-briefing --ref v0.7.0
+codex plugin marketplace add thejaytang/html-briefing --ref v0.7.1
 codex plugin add html-briefing@html-briefing
 ```
 
-Alternatively, download the [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.0/html-briefing-0.7.0.zip) and [SHA-256 checksum](https://github.com/thejaytang/html-briefing/releases/download/v0.7.0/html-briefing-0.7.0.zip.sha256), verify the digest, then enter the extracted `html-briefing-0.7.0` directory:
+Alternatively, download the [ZIP](https://github.com/thejaytang/html-briefing/releases/download/v0.7.1/html-briefing-0.7.1.zip) and [SHA-256 checksum](https://github.com/thejaytang/html-briefing/releases/download/v0.7.1/html-briefing-0.7.1.zip.sha256), verify the digest, then enter the extracted `html-briefing-0.7.1` directory:
 
 ```sh
 codex plugin marketplace add .
@@ -57,11 +57,13 @@ For a migration from the old name, install and verify the new plugin before remo
 
 ImageGen uses the Codex system `$imagegen` skill; this package does not redistribute a duplicate. If it is unavailable, report that capability gap.
 
-Impeccable sets visual direction; UI UX Pro Max provides focused references within that direction; ImageGen supplies useful imagery; GSAP supplies meaningful motion. **Visualize completes this combination through an existing host installation**, for conversation-only exploration and previews. Its original manifest is proprietary, so its source is not in this public package. If a requested chat preview needs it and it is unavailable, suggest the host's official plugin catalog; do not block standalone HTML delivery.
+Impeccable owns visual direction, typography and palette; UI UX Pro Max provides optional focused references within that direction; ImageGen supplies useful imagery; GSAP supplies meaningful motion. **Visualize completes this combination through an existing host installation**, for conversation-only exploration and previews. Its original manifest is proprietary, so its source is not in this public package. If a requested chat preview needs it and it is unavailable, suggest the host's official plugin catalog; do not block standalone HTML delivery.
 
 The plugin does not require every helper on every task. Static charts need no GSAP, and vanilla HTML needs no React workflow. Ordinary writing, coding, charts and tables use the agent's competence and project tools. Humanizer, Ponytail and academic publishing suites remain excluded. Tools and runtime libraries are checked when needed, without silent installation.
 
 ## 3. Use it
+
+For new work, the first design step is [visual selection](plugins/html-briefing/skills/html-briefing/references/visual-direction.md): 2–3 rendered HTML directions using the same actual chapter/content pages. Choose or request revisions before full styling. A choice already made for this creation or an explicit waiver is respected; ordinary edits keep the existing design. These are agent instructions, not an enforced UI wizard.
 
 Illustrative requests, not claims about measured business outcomes:
 
@@ -138,7 +140,7 @@ python3 -m unittest discover -s tests
 node tests/canvas-model.test.cjs
 ```
 
-The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/release-verification-0.7.0.json) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
+The package checker and Python tests use Python 3.10+ standard library; canvas model checks additionally require Node.js. The generated HTML has no runtime package dependencies. The optional lockfile contains PyYAML for the official skill metadata validator. Structural checks do not prove browser behavior. Read [AGENTS.md](AGENTS.md), [current state](PROJECT_STATE.md) and [release validation](project-support/release-verification-0.7.1.json) before contributing. Reproduction reports should identify the scene, state, viewport and input without private material.
 
 [Sources and optional upstreams](plugins/html-briefing/skills/html-briefing/references/sources.md) distinguish inspiration, recommended helpers and host documentation. Redistributed skills retain upstream licenses and credits; omitted suites are not installation recommendations.
 

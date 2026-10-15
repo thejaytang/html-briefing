@@ -1,5 +1,11 @@
 # Current state
 
+## 0.7.1 candidate · 2026-10-15
+
+- Impeccable owns fonts, type scale and palette. New creations provide 2–3 real-page directions and wait for selection before full styling; ordinary revisions and an explicit waiver preserve user scope.
+- Chapter identity retains large color fields, light text and outline numerals. Storytelling, evidence and canvas behavior are unchanged. The fictional starter remains a behavior example and must be restyled for the selected direction.
+- Bilingual instructions and versioned installation/download links updated. Bundled upstream helpers remain unchanged. [Validation record](project-support/release-verification-0.7.1.json). Package checks, 20 Python tests, canvas model assertions and skill metadata validation pass. Local 0.7.1 is installed; all 191 files match source. Publication pending.
+
 ## 0.7.0 published · 2026-10-13
 
 - Public repository is now [html-briefing](https://github.com/thejaytang/html-briefing). [v0.7.0](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.0) is published as the latest stable release at commit `9eebe874101eed9c94f563a988e718b0dd49ecbc`; prior history and release assets are preserved.
