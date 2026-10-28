@@ -1,5 +1,10 @@
 # Current state
 
+## 0.7.5 guidance update · 2026-10-28
+
+- Folded live-talk iteration lessons into narrative, visual interaction, canvas adaptation and validation guidance. Added a conditional reference for visible-part notes, draft protection, presenter/audience layout and real rehearsal. No business assets, private scripts, template runtime changes or imported-helper changes.
+- Plugin manifests identify source version 0.7.5. Existing release tags and ZIPs remain unchanged; 0.7.4 is still the tagged release. Package resources/link checks, 27 Python tests, canvas model/double-click checks, skill metadata validation and diff whitespace checks pass. This is a guidance-only revision; fresh-chat behavior, browser rehearsal and physical projection have not been tested for it. GitHub synchronization and local plugin update are the next steps.
+
 ## 0.7.4 published · 2026-10-15
 
 - New-creation entrypoint copies canvas sources; builder checks structure before writing. Delivery checker rejects plain HTML, missing or stale browser evidence and unrecorded alternatives. Styling and narrative remain flexible.

@@ -16,6 +16,8 @@
 
 Distinguish sequence, containment, dependency and data flow. Label meaningful edges; proximity and arrows do not prove a relationship. Distinguish implemented, planned and external components. Use editable SVG/HTML for precise diagrams; Mermaid is an option when the target host and offline delivery support it. Do not introduce a diagram service just for a small diagram.
 
+Search the supplied materials for existing diagrams, real screenshots and usable demo components before inventing replacements. Inspect the candidate asset and its labels, preserve its meaning and attribution, and package it offline when required. A remembered diagram is not confirmed until located. Use flows for transformations, structure diagrams for relationships, and aligned before/after views for changes; adding decoration to fill whitespace does not explain more.
+
 Inspect reference images before adopting composition or assets. Cropped and annotated screenshots must preserve their meaning. Generated concepts must be distinguishable from real screens. Read imagegen.md when an illustrative raster subject helps explain the scene.
 
 ## Coherent visual design
@@ -23,6 +25,8 @@ Inspect reference images before adopting composition or assets. Cropped and anno
 For new briefings, complete [visual direction and user selection](visual-direction.md) before styling the whole artifact. Impeccable owns typography and color; preserve the chosen chapter identity.
 
 Derive style from the audience, content and brand. Define shared typography, spacing, semantic colors, icon sizes, focus/selection states and motion timing in the project's existing style source. Use hierarchy, contrast and precise alignment; projected technical labels must remain readable. A representative scene includes actual content and an interaction, not only a palette or decorative cover.
+
+Inspect real-size narrow presenter panes, short windows and intended audience dimensions. Use wrapping and grid reflow for long labels; do not squeeze a native multi-pane demo into unreadable columns. Keep short subtitles free of arbitrary width caps that create unnecessary line breaks.
 
 One main theme and visual guide attention. Keep navigation coherent; a chapter sidebar is one option for a long live briefing, not a universal rule. Avoid duplicate progress systems. Small inline SVG icons have their own size constraints.
 
@@ -44,6 +48,8 @@ Treat the object, trigger, explanation and selected state as a unit. Native deta
 | Close a parent | Close owned descendants and clear their selected states |
 | Return to a branch | Follow an explicit position/state restoration policy |
 
+Place a control beside or immediately before the content it changes. Avoid stacked tab bars or a generic “supplementary views” menu when a short visible flow would explain the same point. Do not turn each optional detail into a separate, mostly empty presentation screen.
+
 Independent groups may stay open. A timer must not replace the case or close an explanation someone is reading. Scroll to details only when necessary. Use real buttons, accessible names, aria-expanded/aria-controls, hidden state and correct focus behavior. Restore focus to the trigger if collapsing content contains focus. Pointer scrolling does not grab keyboard focus. Skip links appear on focus.
 
 For linked left-to-right panes, use [workspace controls](workspace-controls.md): draggable boundaries, supporting-pane collapse/restore, narrow-layout adaptation, and state-preserving language/fullscreen controls in the top right. Content-tree disclosure and pane visibility are separate states.
@@ -59,6 +65,8 @@ Loops are optional for repeatable explanations, with a readable end-state pause.
 ## Connectors and selected states
 
 Anchor connections to the relevant object edge or field row. Recompute geometry after resize, expansion or font loading, using one coordinate system. Connector layers do not intercept input. Align small arrows within the text layout, not using spaces or unrelated absolute coordinates.
+
+Selection toolbars must use the same coordinate system as the selected text. A scaled presenter preview or transformed canvas needs explicit viewport-to-local conversion; clamp the toolbar to visible bounds and update it on scrolling and resize. Verify actual text selection inside embedded demos, including after focus and pane changes.
 
 Selection can use a light surface, subtle lift, shadow or border; follow project style. Leave space for focus and shadow so overflow does not clip them. Lift should not shift neighboring content. Browser comment overlays are not page defects.
 

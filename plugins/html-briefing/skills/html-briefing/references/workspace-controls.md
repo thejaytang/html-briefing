@@ -4,7 +4,7 @@ Use this guidance for linked panes, multilingual briefings or a fullscreen view.
 
 ## Chapter navigation for professional briefings
 
-For the default flow canvas, use the auto-hiding key-node overlay defined in [flow-canvas.md](flow-canvas.md). It focuses existing nodes at single-page scale and never opens or folds branches. Keep language and fullscreen on its right. Reveal on top-edge hover and keyboard focus without reserving stage height. For an explicitly selected linear report, persistent top chapter navigation is an option. Derive its order from the actual title outline and argument, rather than a fixed generic menu. A learning atlas, searchable reference or tool workspace does not inherit this requirement; preserve the navigation suited to that task.
+For the default flow canvas, use the auto-hiding key-node overlay defined in [flow-canvas.md](flow-canvas.md). It focuses existing nodes at single-page scale and never opens or folds branches. Keep language and fullscreen on its right. Reveal on hover and keyboard focus without reserving stage height; also provide an inset click/tap target reachable when browser chrome covers the top edge. For an explicitly selected linear report, persistent top chapter navigation is an option. Derive its order from the actual title outline and argument, rather than a fixed generic menu. A learning atlas, searchable reference or tool workspace does not inherit this requirement; preserve the navigation suited to that task.
 
 - Use one canonical chapter/scene model for the title outline, rendered sections, navigation targets, active state and previous/next controls. Each chapter has a stable ID, full heading and short localized navigation label. Do not maintain a separate hand-written menu or infer all chapters from every `h2`/`h3`.
 - The labels summarize the report's main themes in their narrative order. One navigation chapter may own several scenes; every scene has an explicit chapter membership. Do not create a tab for each detail, force a fixed number of chapters or invent a pipeline between independent projects.
@@ -48,3 +48,8 @@ Keep **enter fullscreen / exit fullscreen in the same top-right toolbar** on des
 Use the browser Fullscreen API from a user action. Listen for `fullscreenchange` so Escape and other browser exits update the UI; handle a rejected request and restore focus without claiming success. When the host disallows fullscreen, retain a usable page and explain the unavailable action. A larger CSS layout is not native fullscreen. Pane widths must remain usable after entering or leaving it.
 
 Implementation references: [WAI window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) for semantics and keyboard behavior; [MDN Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API) for browser state and availability. Verify the target host instead of assuming API support.
+
+
+## Presenter and audience views
+
+When requested, use the [live presentation contract](live-presentation.md) for separate audience output, a scaled presenter canvas, editable notes and visible-part synchronization. Fullscreen, pointer mirroring and physical extended-display behavior require separate verification; adding a notes pane does not establish those capabilities.

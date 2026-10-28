@@ -17,6 +17,8 @@ Turn project materials into an evidence-led HTML briefing with storytelling at i
 
 The package has a portable root `plugin.json` and retains the supported Codex compatibility manifest. This format choice does not establish cross-host runtime compatibility. The canonical identifier is `html-briefing` (formerly `html-brifing`). The repository, marketplace and lead skill use the corrected name. This is a skill orchestration plugin, not a slide editor or an automatic dependency manager.
 
+**Repository update 0.7.5:** Guidance now covers timed, feature-led talks, useful visual reuse, vertical progressive reveal, and speaker notes that follow visible reading parts while protecting manual drafts. See [live presentation and notes](plugins/html-briefing/skills/html-briefing/references/live-presentation.md). This updates authoring guidance; it does not add a built-in presenter runtime. The tagged ZIP below remains 0.7.4.
+
 ## 1. Install
 
 Requires a Codex host with plugin support, file access and an authorized project workspace. A browser is needed to verify the rendered deliverable. The plugin installs 12 skill entries: the lead, three helpers and eight GSAP modules together. Host services and runtime libraries remain separate; the workflow checks them only when needed.

@@ -19,6 +19,10 @@ These rules originated in repeated technical-work briefings. They preserve obser
 | Development success is called portable delivery | Verify a moved/extracted final package offline | Unavailable target platforms remain untested |
 | Project-specific assumptions become universal | Extract the failure and response, not the original business story | New scenes use their own facts and contribution boundaries |
 
+## Live-talk revisions
+
+Repeated live-talk revisions exposed failures that source checks alone did not catch: a simplified page retained old click instructions; browser-local edits shadowed updated scripts; the notes pane changed the audience composition; and question-only extension screens added navigation without explanation. Use [timed-talk guidance](narrative.md#timed-talks-and-tool-demonstrations) for content decisions and [live presentation and notes](live-presentation.md) when these capabilities are in scope. These references describe design and verification practices, not a prebuilt feature set or a completed physical projection test.
+
 ## Defaults users can override
 
 A useful title pattern is “short phrase: conclusion or theme,” with a one-sentence explanatory subtitle. A chapter sidebar may help long presenter-led briefings. Object-bound disclosure usually keeps technical details readable. Loops can help repeatable mechanisms. None of these prescribes language, brand, chapter count, Roman numerals, glass effects, fixed canvas, sidebar layout or animation on every scene.
@@ -33,4 +37,4 @@ Change rules in response to reproducible failures or a demonstrated recurring ne
 
 ## Flow canvas default
 
-New presentations default to [flow canvas](flow-canvas.md). This is a presentation/navigation model, not a fixed page-size or card-style requirement. Chapter titles form the leftmost vertical column and content unfolds to their right. A focused page fills the stage; deliberate content-node centering is retained through zoom. Keep view changes independent from disclosure and reading memory.
+New presentations default to [flow canvas](flow-canvas.md). This is a presentation/navigation model, not a fixed page-size or card-style requirement. The bundled starter puts chapter titles in the leftmost column and unfolds content rightward. A presenter-led vertical route may instead reveal content below its owner and open side branches only when needed; choose placement for the narrative and validate the adapted layout. A focused page fills the stage; deliberate content-node centering is retained through zoom. Keep view changes independent from disclosure and reading memory.

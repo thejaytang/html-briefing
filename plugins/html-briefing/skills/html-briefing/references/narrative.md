@@ -74,3 +74,14 @@ Do not cover a structural problem with repeated summaries.
 ## Default spatial presentation
 
 Use [flow canvas](flow-canvas.md) for new presentations: establish input/output, reveal meaningful steps and blockers, then explore branches and gather them for summary. Each node has a clear theme and can contain long-form content. The canvas does not imply causality or sequence between independent projects; use truthful parallel grouping. Explicit alternatives and approved existing designs take precedence.
+
+
+## Timed talks and tool demonstrations
+
+For a time-limited talk, retain required sections and assign time to explanation, live operations and transitions before polishing pages. For each scene, decide whether to keep it, merge its point into a neighbor, or move it out of the speaking route. Follow-up material should answer a real question; avoid a sequence of mostly empty screens offering collapsed questions. A short design explanation can simply be visible on the next reading part. Recheck chapter outlines after merging or removing content.
+
+Introduce a tool's purpose and operation before its example: what it helps people do → how they use it → one concrete case showing the result. Internal IDs identify the example after the audience understands the task. A validation tool's design can be explained through complementary methods and the evidence each sees; test counters belong beside their test setup, rather than replacing that explanation. Keep personal contributions distinct from team/domain work.
+
+Use short spoken sentences and familiar verbs. Include an opening, transitions and a closing where appropriate. Put action cues beside the sentence they support, in the speaker's preferred language; do not duplicate them in a separate advice panel. Small labels such as “Task:”, “Solution:” or “Example:” can identify a scene's role without repeating its headline. Remove repeated summaries, irrelevant implementation fields and defensive captions; retain qualifications that affect the truth of a claim.
+
+Estimate speech length as a planning aid, then rehearse the actual route with pauses, scrolling and live input. A word count or simulated click sequence does not establish presentation duration. Keep the target configurable; a twelve-minute rehearsal from one project is not a universal page or word limit.
