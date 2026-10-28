@@ -11,6 +11,10 @@ codex plugin add html-briefing@html-briefing
 
 The [release](https://github.com/thejaytang/html-briefing/releases/tag/v0.7.4) includes the ZIP and SHA-256 checksum. The ZIP contains a marketplace root, not only the nested plugin. Choose either Git or ZIP installation. If a marketplace with this name is already configured, inspect its source first; to switch sources, remove only that marketplace registration before adding the new source. This does not authorize deleting working files.
 
+## Guidance update 0.7.5
+
+The repository guidance update at commit `7919329873cfc58e707fd48a3e110e75e9394666` adds live-talk and editable-notes practices. It has no new release ZIP and does not change the template runtime. To select this source version, add the same marketplace with `--ref 7919329873cfc58e707fd48a3e110e75e9394666`, then install `html-briefing@html-briefing`. If the CLI reports a different existing source, inspect it and remove only the `html-briefing` marketplace registration before re-adding it. The pinned stable-release instructions above remain available.
+
 ## Local installation and name migration
 
 From the extracted repository root, run `codex plugin marketplace add .`, then `codex plugin add html-briefing@html-briefing`. Keep this local source directory in place. Verify the installed manifest, version, lead skill and canvas assets before retiring the old installation. Start a new chat for fresh discovery; a running chat can retain its old skill catalog.
